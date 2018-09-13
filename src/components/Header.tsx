@@ -1,19 +1,17 @@
-import * as React from 'react'
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import * as React from 'react';
 
-interface HeaderProps {
+interface Props {
+  lang: Lang
+  logo: any
+  title: string
+  home: string
+  setLang: setLang
+  items: any
 }
 
-const Header: React.SFC<HeaderProps> = (props) => (
+const Header: React.SFC<Props> = ({setLang, lang, logo, title, home, items}) => (
   <div>
-    <Typography variant="display1" align="center" gutterBottom={true}>
-      Title
-    </Typography>
-
-    <Button color="primary" variant="contained">
-      hi
-    </Button>
+    Header
   </div>
 );
 

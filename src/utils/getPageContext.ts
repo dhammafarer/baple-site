@@ -4,9 +4,6 @@ import { SheetsRegistry } from 'jss';
 import { createGenerateClassName } from '@material-ui/core/styles';
 import theme from '../themes/default';
 
-// A theme with custom primary and secondary color.
-// It's optional.
-
 function createPageContext() {
   return {
     theme,
