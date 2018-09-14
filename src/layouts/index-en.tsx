@@ -4,6 +4,7 @@ import { isRoot } from '../utils/helpers';
 
 import withRoot from '../utils/withRoot';
 import Head from '../components/Head';
+import Header from '../components/Header';
 
 interface Props {
   children: any
@@ -31,6 +32,7 @@ class DefaultLayoutEn extends React.Component<Props, {}> {
     return (
       <div>
         <Head title={data.site.siteMetadata.title.en}/>
+        <Header/>
         <div>
           {children()}
         </div>
