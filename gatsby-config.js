@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: {
-      en: 'Baple',
-      es: 'Baple',
-      zh: 'Baple'
+      en: 'Baple EN',
+      es: 'Baple ES',
+      zh: 'Baple ZH'
     },
-    defLang: 'es',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

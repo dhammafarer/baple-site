@@ -6,7 +6,7 @@ interface Props {
 class IndexPage extends React.Component<Props, {}> {
   render () {
     return (
-      <div>Root</div>
+      <div>Spanish</div>
     );
   }
 }

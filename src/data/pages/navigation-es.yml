@@ -1,0 +1,82 @@
+navigation:
+  - page: root
+    title: Baple Group
+    logo: '../img/logos/baple-group-logo.png'
+    home: '/'
+    items:
+      -
+        - to: /wines
+          label: Baple Wines
+        - to: /plastics
+          label: Baple Plastics
+        - to: /metal-packaging
+          label: Baple Metal Packaging
+        - to: /energy
+          label: Baple Energy
+        - to: /consulting
+          label: Baple Consulting
+      -
+        - to: /
+          label: Baple Group
+
+  - page: wines
+    title: Baple Wines
+    logo: '../img/logos/baple-wines-logo.png'
+    home: '/wines'
+    items:
+      -
+        - to: /wines
+          label: Baple Wines
+      -
+        - to: /
+          label: Baple Group
+
+  - page: plastics
+    title: Baple Plastics
+    logo: '../img/logos/baple-plastics-logo.png'
+    home: '/plastic'
+    items:
+      -
+        - to: /plastics
+          label: Baple Plastics
+        - to: /plastic/pulverizers
+          label: Pulverizers
+      -
+        - to: /
+          label: Baple Group
+
+  - page: energy
+    title: Baple Energy
+    logo: '../img/logos/baple-energy-logo.png'
+    home: '/energy'
+    items:
+      -
+        - to: /energy
+          label: Baple Energy
+      -
+        - to: /
+          label: Baple Group
+
+  - page: metal-packaging
+    title: Baple Metal Packing
+    logo: '../img/logos/baple-metal-packaging-logo.png'
+    home: '/metal-packaging'
+    items:
+      -
+        - to: /metal-packaging
+          label: Baple Metal Packaging
+      -
+        - to: /
+          label: Baple Group
+
+  - page: engineering
+    title: Baple Engineering
+    logo: ''
+    home: '/consulting'
+    items:
+      -
+        - to: /engineering
+          label: Baple Engineering
+      -
+        - to: /
+          label: Baple Group

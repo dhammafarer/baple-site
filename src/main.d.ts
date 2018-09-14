@@ -1,3 +1,5 @@
+declare const graphql: (query: TemplateStringsArray) => void
+
 declare type Lang = 'es'| 'en' | 'zh'
 
 declare type setLang = (lang: Lang) => void

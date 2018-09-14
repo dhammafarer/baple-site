@@ -3,7 +3,7 @@ import * as locale from '../utils/locale';
 import { isRoot } from '../utils/helpers';
 
 import withRoot from '../utils/withRoot';
-import Helmet from 'react-helmet';
+import Head from '../components/Head';
 
 interface Props {
   children: any
@@ -14,7 +14,7 @@ interface Props {
     site: {
       siteMetadata: {
         title: {
-          en: string
+          es: string
         }
       }
     }
@@ -25,21 +25,12 @@ interface Props {
   }
 }
 
-class DefaultLayout extends React.Component<Props, {}> {
+class DefaultLayoutEs extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
       <div>
-        <Helmet
-          title={this.props.data.site.siteMetadata.title.en}
-          meta={[
-            {name: 'description', content: 'Baple Group'},
-          ]}
-          link={[
-            {rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500"},
-            {rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons"}
-          ]}
-        />
+        <Head title={data.site.siteMetadata.title.es}/>
         <div>
           {children()}
         </div>
@@ -48,14 +39,14 @@ class DefaultLayout extends React.Component<Props, {}> {
   }
 }
 
-export default withRoot(DefaultLayout);
+export default withRoot(DefaultLayoutEs);
 
 export const query = graphql`
-  query DefaultLayoutQuery {
+  query DefaultLayoutEsQuery {
     site {
       siteMetadata {
         title {
-          en
+         es 
         }
       }
     }
@@ -64,7 +55,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    pagesYaml(id: {regex: "/navigation-en.yml/"}) {
+    pagesYaml(id: {regex: "/navigation-es.yml/"}) {
       navigation {
         page
         home
