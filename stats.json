@@ -1,0 +1,136 @@
+{
+  "assetsByChunkName": {
+    "component---src-layouts-energy-en-tsx": [
+      "component---src-layouts-energy-en-tsx-d2e8e18c1c61e9315989.js",
+      "component---src-layouts-energy-en-tsx-d2e8e18c1c61e9315989.js.map"
+    ],
+    "path---en-wines": [
+      "path---en-wines-a0e39f21c11f6a62c5ab.js",
+      "path---en-wines-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-en-tsx": [
+      "component---src-layouts-index-en-tsx-a49bd2caca290ecf5f84.js",
+      "component---src-layouts-index-en-tsx-a49bd2caca290ecf5f84.js.map"
+    ],
+    "path---en-engineering": [
+      "path---en-engineering-a0e39f21c11f6a62c5ab.js",
+      "path---en-engineering-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-tsx": [
+      "component---src-layouts-index-tsx-1b03d091fb20ca29b4bc.js",
+      "component---src-layouts-index-tsx-1b03d091fb20ca29b4bc.js.map"
+    ],
+    "component---src-layouts-index-es-tsx": [
+      "component---src-layouts-index-es-tsx-d0b0aa48e7114c484b87.js",
+      "component---src-layouts-index-es-tsx-d0b0aa48e7114c484b87.js.map"
+    ],
+    "component---src-pages-en-wines-index-tsx": [
+      "component---src-pages-en-wines-index-tsx-00f5f55e27d160b608db.js",
+      "component---src-pages-en-wines-index-tsx-00f5f55e27d160b608db.js.map"
+    ],
+    "path---": [
+      "path----0ca7d5f157d8bd9031df.js",
+      "path----0ca7d5f157d8bd9031df.js.map"
+    ],
+    "component---src-pages-en-index-tsx": [
+      "component---src-pages-en-index-tsx-64fcdb2dd1ea65a9a5b5.js",
+      "component---src-pages-en-index-tsx-64fcdb2dd1ea65a9a5b5.js.map"
+    ],
+    "component---src-pages-es-index-tsx": [
+      "component---src-pages-es-index-tsx-45a9d8eb068613dfee33.js",
+      "component---src-pages-es-index-tsx-45a9d8eb068613dfee33.js.map"
+    ],
+    "component---src-pages-en-metal-packaging-index-tsx": [
+      "component---src-pages-en-metal-packaging-index-tsx-e975d978088ca4b4912e.js",
+      "component---src-pages-en-metal-packaging-index-tsx-e975d978088ca4b4912e.js.map"
+    ],
+    "path---en-energy": [
+      "path---en-energy-a0e39f21c11f6a62c5ab.js",
+      "path---en-energy-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-en-engineering-index-tsx": [
+      "component---src-pages-en-engineering-index-tsx-a461911d3bcfbfc74841.js",
+      "component---src-pages-en-engineering-index-tsx-a461911d3bcfbfc74841.js.map"
+    ],
+    "path---zh": [
+      "path---zh-a0e39f21c11f6a62c5ab.js",
+      "path---zh-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-wines-en-tsx": [
+      "component---src-layouts-wines-en-tsx-1c48194ab794df5d4d90.js",
+      "component---src-layouts-wines-en-tsx-1c48194ab794df5d4d90.js.map"
+    ],
+    "component---src-pages-en-plastics-index-tsx": [
+      "component---src-pages-en-plastics-index-tsx-4346b876c62c607ad0b5.js",
+      "component---src-pages-en-plastics-index-tsx-4346b876c62c607ad0b5.js.map"
+    ],
+    "component---src-layouts-engineering-en-tsx": [
+      "component---src-layouts-engineering-en-tsx-efb5e3e3a980e4d30a5e.js",
+      "component---src-layouts-engineering-en-tsx-efb5e3e3a980e4d30a5e.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---es": [
+      "path---es-a0e39f21c11f6a62c5ab.js",
+      "path---es-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-6bc9ad3f130507df6e02.js",
+      "commons-6bc9ad3f130507df6e02.js.map"
+    ],
+    "path---en-metal-packaging": [
+      "path---en-metal-packaging-a0e39f21c11f6a62c5ab.js",
+      "path---en-metal-packaging-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-tsx": [
+      "component---src-pages-404-tsx-c3f1179ef31e3033d235.js",
+      "component---src-pages-404-tsx-c3f1179ef31e3033d235.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-zh-index-tsx": [
+      "component---src-pages-zh-index-tsx-40c60e8fa7f007ade477.js",
+      "component---src-pages-zh-index-tsx-40c60e8fa7f007ade477.js.map"
+    ],
+    "component---src-pages-index-tsx": [
+      "component---src-pages-index-tsx-f3f20877b43c58d716bc.js",
+      "component---src-pages-index-tsx-f3f20877b43c58d716bc.js.map"
+    ],
+    "component---src-layouts-plastics-en-tsx": [
+      "component---src-layouts-plastics-en-tsx-4111df83a60b05179ecd.js",
+      "component---src-layouts-plastics-en-tsx-4111df83a60b05179ecd.js.map"
+    ],
+    "app": [
+      "app-9145858adeba00905d3f.js",
+      "app-9145858adeba00905d3f.js.map"
+    ],
+    "component---src-pages-en-energy-index-tsx": [
+      "component---src-pages-en-energy-index-tsx-2b3613c9b6d2d012cc85.js",
+      "component---src-pages-en-energy-index-tsx-2b3613c9b6d2d012cc85.js.map"
+    ],
+    "path---en-plastics": [
+      "path---en-plastics-2b656a89a9a580672572.js",
+      "path---en-plastics-2b656a89a9a580672572.js.map"
+    ],
+    "component---src-layouts-metal-packaging-en-tsx": [
+      "component---src-layouts-metal-packaging-en-tsx-ef8c29f503b9e12d1245.js",
+      "component---src-layouts-metal-packaging-en-tsx-ef8c29f503b9e12d1245.js.map"
+    ],
+    "path---en": [
+      "path---en-3d9461b617217aa1fec5.js",
+      "path---en-3d9461b617217aa1fec5.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-zh-tsx": [
+      "component---src-layouts-index-zh-tsx-4df6f1f9df54a8397dbd.js",
+      "component---src-layouts-index-zh-tsx-4df6f1f9df54a8397dbd.js.map"
+    ]
+  }
+}
