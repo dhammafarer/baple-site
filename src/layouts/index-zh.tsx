@@ -1,9 +1,7 @@
 import * as React from 'react';
-import * as locale from '../utils/locale';
-import { isRoot } from '../utils/helpers';
 
 import withRoot from '../utils/withRoot';
-import Head from '../components/Head';
+import App from '../components/App';
 
 interface Props {
   children: any
@@ -25,28 +23,27 @@ interface Props {
   }
 }
 
-class DefaultLayoutEn extends React.Component<Props, {}> {
+class DefaultLayoutZh extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
-      <div>
-        <Head title={data.site.siteMetadata.title.zh}/>
-        <div>
-          {children()}
-        </div>
-      </div>
+      <App
+        title={data.site.siteMetadata.title.zh}
+      >
+        {children()}
+      </App>
     );
   }
 }
 
-export default withRoot(DefaultLayoutEn);
+export default withRoot(DefaultLayoutZh);
 
 export const query = graphql`
   query DefaultLayoutZhQuery {
     site {
       siteMetadata {
         title {
-         zh 
+         zh
         }
       }
     }

@@ -1,9 +1,7 @@
 import * as React from 'react';
-import * as locale from '../utils/locale';
-import { isRoot } from '../utils/helpers';
 
 import withRoot from '../utils/withRoot';
-import Head from '../components/Head';
+import App from '../components/App';
 
 interface Props {
   children: any
@@ -29,12 +27,11 @@ class DefaultLayoutEs extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
-      <div>
-        <Head title={data.site.siteMetadata.title.es}/>
-        <div>
-          {children()}
-        </div>
-      </div>
+      <App
+        title={data.site.siteMetadata.title.es}
+      >
+        {children()}
+      </App>
     );
   }
 }
@@ -46,7 +43,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title {
-         es 
+         es
         }
       }
     }

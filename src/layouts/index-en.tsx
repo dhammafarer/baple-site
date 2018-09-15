@@ -1,10 +1,7 @@
 import * as React from 'react';
-import * as locale from '../utils/locale';
-import { isRoot } from '../utils/helpers';
 
 import withRoot from '../utils/withRoot';
-import Head from '../components/Head';
-import Header from '../components/Header';
+import App from '../components/App';
 
 interface Props {
   children: any
@@ -30,13 +27,11 @@ class DefaultLayoutEn extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
-      <div>
-        <Head title={data.site.siteMetadata.title.en}/>
-        <Header/>
-        <div>
-          {children()}
-        </div>
-      </div>
+      <App
+        title={data.site.siteMetadata.title.en}
+      >
+        {children()}
+      </App>
     );
   }
 }
