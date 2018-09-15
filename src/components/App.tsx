@@ -38,7 +38,7 @@ const App: React.SFC<Props> = ({ title, children, nav, classes, lang }) => (
     <main className={classes.main}>
       {children}
     </main>
-    <Footer/>
+    <Footer logo={nav.logo}/>
   </div>
 );
 
