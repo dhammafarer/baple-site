@@ -5,8 +5,10 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
 import { createStyles, withStyles } from "@material-ui/core/styles";
 import Link from './Link';
+import CloseIcon from "@material-ui/icons/Close";
 
 interface Props {
   lang: Lang
@@ -35,6 +37,10 @@ const styles = createStyles({
   },
   langs: {
     marginTop: '1em'
+  },
+  close: {
+    alignSelf: 'flex-end',
+    marginRight: 10
   }
 });
 
@@ -47,6 +53,9 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
       onKeyDown={handleClose}
     >
       <div className={classes.list}>
+        <IconButton className={classes.close}>
+          <CloseIcon color="secondary"/>
+        </IconButton>
         <List>
           <img className={classes.logo} src={nav.logo.childImageSharp.sizes.src}/>
           <Typography variant="title" gutterBottom={true}>{nav.title}</Typography>
