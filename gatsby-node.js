@@ -1,17 +1,23 @@
+const pages = [
+  {
+    path: /^\/en/,
+    layout: 'index-en',
+  },
+  {
+    path: /^\/es/,
+    layout: 'index-es',
+  },
+  {
+    path: /^\/zh/,
+    layout: 'index-zh',
+  },
+];
 exports.onCreatePage = async ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return  new Promise((resolve, reject)=> {
-    if (page.path.match(/^\/en/)) {
-      page.layout = 'index-en';
-      createPage(page);
-    } else if (page.path.match(/^\/es/)) {
-      page.layout = 'index-es';
-      createPage(page);
-    } else if (page.path.match(/^\/zh/)) {
-      page.layout = 'index-zh';
-      createPage(page);
-    }
+    const match = pages.find(p => page.path.match(p.path));
+    if (match) page.layout = match.layout;
 
     resolve();
   });
