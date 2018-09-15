@@ -47,7 +47,7 @@ const styles = createStyles({
 });
 
 const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
-  <Drawer anchor="right" open={open} onClose={this.handleClose}>
+  <Drawer anchor="right" open={open} onClose={handleClose}>
     <div
       tabIndex={0}
       role="button"
