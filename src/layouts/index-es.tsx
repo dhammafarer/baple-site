@@ -30,6 +30,7 @@ class DefaultLayoutEs extends React.Component<Props, {}> {
       <LandingPage
         title={data.site.siteMetadata.title.es}
         nav={data.navYaml.nav}
+        lang={'es'}
       >
         {children()}
       </LandingPage>

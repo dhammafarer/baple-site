@@ -2,6 +2,7 @@ import * as React from 'react';
 import HeaderBar from './HeaderBar';
 
 interface Props {
+  lang: Lang
   nav: {
     title: string
     logo: any
@@ -28,7 +29,7 @@ class Header extends React.Component<Props, State> {
   }
 
   render () {
-    const { nav } = this.props;
+    const { nav, lang } = this.props;
 
     return (
       <HeaderBar
@@ -36,6 +37,7 @@ class Header extends React.Component<Props, State> {
         toggleMenu={this.toggleMenu}
         handleClose={this.handleClose}
         open={this.state.menu}
+        lang={lang}
       />
     );
   }

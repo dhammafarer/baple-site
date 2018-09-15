@@ -30,6 +30,7 @@ class DefaultLayoutEn extends React.Component<Props, {}> {
       <App
         title={data.site.siteMetadata.title.en}
         nav={data.navYaml.nav}
+        lang={'en'}
       >
         {children()}
       </App>

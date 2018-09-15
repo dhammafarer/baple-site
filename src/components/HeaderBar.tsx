@@ -9,6 +9,7 @@ import { createStyles, withStyles } from "@material-ui/core/styles";
 import Link from './Link';
 
 interface Props {
+  lang: Lang
   classes: any
   handleClose: any
   toggleMenu: any
@@ -31,11 +32,11 @@ const styles = createStyles({
   }
 });
 
-const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav }) => (
+const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav, lang }) => (
     <div>
       <AppBar position="static">
         <Toolbar>
-          <Link lang={'en'} to={nav.home}>
+          <Link lang={lang} to={nav.home}>
             <img className={classes.logo} src={nav.logo.childImageSharp.sizes.src}/>
           </Link>
           <Typography variant="title" color="inherit">

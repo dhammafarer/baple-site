@@ -30,6 +30,7 @@ class DefaultLayoutZh extends React.Component<Props, {}> {
       <LandingPage
         title={data.site.siteMetadata.title.zh}
         nav={data.navYaml.nav}
+        lang={'zh'}
       >
         {children()}
       </LandingPage>

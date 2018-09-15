@@ -6,6 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { withStyles, createStyles } from "@material-ui/core/styles";
 
 interface Props {
+  lang: Lang
   title: string
   classes: any
   nav: any
@@ -22,11 +23,11 @@ const styles = createStyles({
   }
 });
 
-const LandigPage: React.SFC<Props> = ({ title, children, classes, nav }) => (
+const LandigPage: React.SFC<Props> = ({ title, children, classes, nav, lang }) => (
   <div className={classes.layout}>
     <CssBaseline/>
     <Head title={title}/>
-    <Header nav={nav}/>
+    <Header lang={lang} nav={nav}/>
     <main className={classes.main}>
       {children}
       {nav.title}
