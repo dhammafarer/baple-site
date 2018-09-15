@@ -43,7 +43,7 @@ const styles = createStyles({
 
 const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav, lang }) => (
     <div>
-      <AppBar position="static" className={classes.bar}>
+      <AppBar position="fixed" className={classes.bar}>
         <Toolbar>
           <Link lang={lang} to={nav.home}>
             <img className={classes.logo} src={nav.logo.childImageSharp.sizes.src}/>

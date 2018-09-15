@@ -13,14 +13,20 @@ interface Props {
   nav: any
 }
 
-const styles = createStyles({
+const styles = (theme:any) => createStyles({
   layout: {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
   },
   main: {
-    flex: 1
+    flex: 1,
+    width: 'auto',
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    display: 'flex',
+    flexDirection: 'column',
+    paddingTop: 64,
   }
 });
 

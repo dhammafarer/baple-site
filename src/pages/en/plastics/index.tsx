@@ -2,12 +2,18 @@ import * as React from 'react';
 import DivisionPage from '../../../components/pages/DivisionPage';
 
 interface Props {
+  data: {
+    plasticsYaml: any
+  }
 }
 
 class PlasticsIndexEn extends React.Component<Props, {}> {
   render () {
+    const {data} = this.props;
     return (
-      <div></div>
+      <DivisionPage
+        welcome={data.plasticsYaml.welcome}
+      />
     );
   }
 }
@@ -19,8 +25,7 @@ export const query = graphql`
     plasticsYaml(id: {regex: "/index-en.yml/"}) {
       welcome {
         title
-        subtitle1
-        subtitle2
+        subtitle
         img {
           childImageSharp {
             sizes (maxWidth: 600) {
