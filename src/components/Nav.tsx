@@ -29,7 +29,7 @@ const styles = createStyles({
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
-    marginTop: '1em',
+    marginTop: '1.5em',
   },
   logo: {
     width: 150,
@@ -40,7 +40,9 @@ const styles = createStyles({
   },
   close: {
     alignSelf: 'flex-end',
-    marginRight: 10
+    position: 'absolute',
+    top: 4,
+    right: 4,
   }
 });
 
