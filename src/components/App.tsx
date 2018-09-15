@@ -9,6 +9,7 @@ import { withStyles, createStyles } from "@material-ui/core/styles";
 interface Props {
   title: string
   classes: any
+  nav: any
 }
 
 const styles = createStyles({
@@ -22,11 +23,11 @@ const styles = createStyles({
   }
 });
 
-const App: React.SFC<Props> = ({ title, children, classes }) => (
+const App: React.SFC<Props> = ({ title, children, nav, classes }) => (
   <div className={classes.layout}>
     <CssBaseline/>
     <Head title={title}/>
-    <Header/>
+    <Header nav={nav}/>
     <main className={classes.main}>
       {children}
     </main>

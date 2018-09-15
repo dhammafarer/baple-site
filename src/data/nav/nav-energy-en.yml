@@ -1,0 +1,19 @@
+nav:
+  title: Baple Energy
+  logo: '../img/logos/baple-group-logo.png'
+  home: '/'
+  items:
+    -
+      - to: /wines
+        label: Baple Wines
+      - to: /plastics
+        label: Baple Plastics
+      - to: /metal-packaging
+        label: Baple Metal Packaging
+      - to: /energy
+        label: Baple Energy
+      - to: /consulting
+        label: Baple Consulting
+    -
+      - to: /
+        label: Baple Group

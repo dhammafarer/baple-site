@@ -17,8 +17,8 @@ interface Props {
       }
     }
     background: any
-    pagesYaml: {
-      navigation: any
+    navYaml: {
+      nav: any
     }
   }
 }
@@ -29,6 +29,7 @@ class DefaultLayoutEn extends React.Component<Props, {}> {
     return (
       <App
         title={data.site.siteMetadata.title.en}
+        nav={data.navYaml.nav}
       >
         {children()}
       </App>
@@ -52,9 +53,8 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    pagesYaml(id: {regex: "/navigation-en.yml/"}) {
-      navigation {
-        page
+    navYaml(id: {regex: "/nav-energy-en.yml/"}) {
+      nav {
         home
         title
         logo {

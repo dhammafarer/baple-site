@@ -17,8 +17,8 @@ interface Props {
       }
     }
     background: any
-    pagesYaml: {
-      navigation: any
+    navYaml: {
+      nav: any
     }
   }
 }
@@ -29,6 +29,7 @@ class DefaultLayoutZh extends React.Component<Props, {}> {
     return (
       <LandingPage
         title={data.site.siteMetadata.title.zh}
+        nav={data.navYaml.nav}
       >
         {children()}
       </LandingPage>
@@ -52,9 +53,8 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    pagesYaml(id: {regex: "/navigation-en.yml/"}) {
-      navigation {
-        page
+    navYaml(id: {regex: "/nav-baple-zh.yml/"}) {
+      nav {
         home
         title
         logo {

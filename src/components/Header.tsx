@@ -3,6 +3,12 @@ import { AppBar, IconButton, Menu, MenuItem, Switch, Toolbar, Typography } from 
 import MenuIcon from "@material-ui/icons/Menu";
 
 interface Props {
+  nav: {
+    title: string
+    logo: any
+    home: string
+    items: Array<any>
+  }
 }
 
 interface State {
@@ -23,6 +29,7 @@ class Header extends React.Component<Props, State> {
   }
 
   render () {
+    const { nav } = this.props;
     const { anchorEl } = this.state;
     const open = Boolean(anchorEl);
 
@@ -34,7 +41,7 @@ class Header extends React.Component<Props, State> {
               <MenuIcon/>
             </IconButton>
             <Typography variant="title" color="inherit">
-              Baple
+              {nav.title}
             </Typography>
             <Menu
               id="menu-appbar"

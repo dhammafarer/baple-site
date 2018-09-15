@@ -8,6 +8,7 @@ import { withStyles, createStyles } from "@material-ui/core/styles";
 interface Props {
   title: string
   classes: any
+  nav: any
 }
 
 const styles = createStyles({
@@ -21,13 +22,14 @@ const styles = createStyles({
   }
 });
 
-const LandigPage: React.SFC<Props> = ({ title, children, classes }) => (
+const LandigPage: React.SFC<Props> = ({ title, children, classes, nav }) => (
   <div className={classes.layout}>
     <CssBaseline/>
     <Head title={title}/>
-    <Header/>
+    <Header nav={nav}/>
     <main className={classes.main}>
       {children}
+      {nav.title}
     </main>
   </div>
 );
