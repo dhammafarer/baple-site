@@ -23,27 +23,36 @@ interface Props {
 }
 
 const styles = createStyles({
+  bar: {
+    backgroundColor: 'white',
+  },
   grow: {
     flexGrow: 1
   },
   logo: {
+    marginTop: 5,
+    marginRight: 10,
     width: 48,
     height: 48,
+    alignSelf: 'center',
+  },
+  title: {
+    textTransform: 'uppercase'
   }
 });
 
 const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav, lang }) => (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.bar}>
         <Toolbar>
           <Link lang={lang} to={nav.home}>
             <img className={classes.logo} src={nav.logo.childImageSharp.sizes.src}/>
           </Link>
-          <Typography variant="title" color="inherit">
+          <Typography variant="title" color="primary" className={classes.title}>
             {nav.title}
           </Typography>
           <div className={classes.grow}/>
-          <IconButton color="inherit" onClick={toggleMenu}>
+          <IconButton color="primary" onClick={toggleMenu}>
             <MenuIcon/>
           </IconButton>
         </Toolbar>
