@@ -21,12 +21,14 @@ const styles = (theme:any) => createStyles({
   },
   main: {
     flex: 1,
-    width: 'auto',
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
+    width: '100%',
+    paddingLeft: theme.spacing.unit * 3,
+    paddingRight: theme.spacing.unit * 3,
     display: 'flex',
     flexDirection: 'column',
     paddingTop: 64,
+    margin: '0 auto',
+    maxWidth: 1600,
   }
 });
 
