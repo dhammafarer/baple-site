@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { AppBar, IconButton, Menu, MenuItem, Switch, Toolbar, Typography } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
+import HeaderBar from './HeaderBar';
 
 interface Props {
   nav: {
@@ -12,57 +11,32 @@ interface Props {
 }
 
 interface State {
-  anchorEl: any | null
+  menu: boolean
 }
 
 class Header extends React.Component<Props, State> {
   state:State = {
-    anchorEl: null
+    menu: false
   }
 
-  handleMenu = (event:Event) => {
-    this.setState({anchorEl: event.currentTarget})
+  toggleMenu = () => {
+    this.setState({menu: !this.state.menu});
   }
 
   handleClose = () => {
-    this.setState({anchorEl: null})
+    this.setState({menu: false});
   }
 
   render () {
     const { nav } = this.props;
-    const { anchorEl } = this.state;
-    const open = Boolean(anchorEl);
 
     return (
-      <div>
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton color="inherit">
-              <MenuIcon/>
-            </IconButton>
-            <Typography variant="title" color="inherit">
-              {nav.title}
-            </Typography>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={open}
-              onClose={this.handleClose}
-            >
-              <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-              <MenuItem onClick={this.handleClose}>My account</MenuItem>
-            </Menu>
-          </Toolbar>
-        </AppBar>
-      </div>
+      <HeaderBar
+        nav={nav}
+        toggleMenu={this.toggleMenu}
+        handleClose={this.handleClose}
+        open={this.state.menu}
+      />
     );
   }
 };

@@ -1,7 +1,7 @@
 nav:
   title: Baple Engineering
   logo: '../img/logos/baple-group-logo.png'
-  home: '/'
+  home: '/engineering'
   items:
     -
       - to: /wines

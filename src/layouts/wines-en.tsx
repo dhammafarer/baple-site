@@ -60,7 +60,7 @@ export const query = graphql`
         logo {
           childImageSharp {
             sizes(maxWidth: 200) {
-              ...GatsbyImageSharpSizes
+              src
             }
           }
         }

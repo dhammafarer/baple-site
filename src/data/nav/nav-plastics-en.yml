@@ -1,7 +1,7 @@
 nav:
   title: Baple Plastics
   logo: '../img/logos/baple-group-logo.png'
-  home: '/'
+  home: '/plastics'
   items:
     -
       - to: /wines
