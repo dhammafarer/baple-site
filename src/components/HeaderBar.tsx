@@ -57,7 +57,7 @@ const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, n
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Nav nav={nav} open={open} handleClose={handleClose}/>
+      <Nav lang={lang} nav={nav} open={open} handleClose={handleClose}/>
     </div>
 );
 

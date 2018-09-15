@@ -1,5 +1,5 @@
 nav:
-  title: Baple Group Spanish
+  title: Baple Group
   logo: '../img/logos/baple-group-logo.png'
   home: '/'
   items:
@@ -12,8 +12,8 @@ nav:
         label: Baple Metal Packaging
       - to: /energy
         label: Baple Energy
-      - to: /consulting
-        label: Baple Consulting
+      - to: /engineering
+        label: Baple Engineering
     -
       - to: /
         label: Baple Group

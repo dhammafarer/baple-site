@@ -9,6 +9,7 @@ interface Props {
 const Link: React.SFC<Props> = ({ children, lang, to }) => (
   <GatsbyLink
     to={'/' + lang + to}
+    style={{textDecoration: 'none'}}
   >
     {children}
   </GatsbyLink>

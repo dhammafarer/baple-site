@@ -1,6 +1,6 @@
 nav:
   title: Baple Plastics
-  logo: '../img/logos/baple-group-logo.png'
+  logo: '../img/logos/baple-plastics-logo.png'
   home: '/plastics'
   items:
     -
@@ -12,8 +12,8 @@ nav:
         label: Baple Metal Packaging
       - to: /energy
         label: Baple Energy
-      - to: /consulting
-        label: Baple Consulting
+      - to: /engineering
+        label: Baple Engineering
     -
       - to: /
         label: Baple Group
