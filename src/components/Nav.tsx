@@ -4,6 +4,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 import { createStyles, withStyles } from "@material-ui/core/styles";
 import Link from './Link';
 
@@ -31,12 +32,14 @@ const styles = createStyles({
   logo: {
     width: 150,
     marginBottom: 20,
-
   },
+  langs: {
+    marginTop: '1em'
+  }
 });
 
 const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
-  <Drawer anchor="right" open={true} onClose={this.handleClose}>
+  <Drawer anchor="right" open={open} onClose={this.handleClose}>
     <div
       tabIndex={0}
       role="button"
@@ -49,8 +52,8 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
           <Typography variant="title" gutterBottom={true}>{nav.title}</Typography>
           {
             nav.items.map((xs:any) => xs.map((x:any) =>
-              <ListItem button={true} divider={true} style={{justifyContent: "center"}}>
-                <Link to={x.to} lang={lang}>
+              <Link to={x.to} lang={lang}>
+                <ListItem button={true} divider={true} style={{justifyContent: "center"}}>
                   <Typography
                     variant="caption"
                     className={classes.item}
@@ -59,11 +62,22 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
                   >
                     {x.label}
                   </Typography>
-                </Link>
-              </ListItem>
+                </ListItem>
+              </Link>
             ))
           }
         </List>
+        <div className={classes.langs}>
+          {
+            ['en','es','zh'].map(x =>
+              <Link key={x} to='/' lang={x} className={classes.item}>
+                <Button color={x===lang ? 'default':'secondary'}>
+                  {x}
+                </Button>
+              </Link>
+            )
+          }
+        </div>
       </div>
     </div>
   </Drawer>

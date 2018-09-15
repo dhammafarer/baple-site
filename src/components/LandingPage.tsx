@@ -12,27 +12,31 @@ interface Props {
   nav: any
 }
 
-const styles = createStyles({
+const styles = (theme:any) => createStyles({
   layout: {
+    width: 'auto',
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
   },
-  main: {
-    flex: 1
+  page: {
+    flex: 1,
+    width: 'auto',
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    display: 'flex',
   }
 });
 
-const LandigPage: React.SFC<Props> = ({ title, children, classes, nav, lang }) => (
+const LandingPage: React.SFC<Props> = ({ title, children, classes, nav, lang }) => (
   <div className={classes.layout}>
     <CssBaseline/>
     <Head title={title}/>
     <Header lang={lang} nav={nav}/>
-    <main className={classes.main}>
+    <div className={classes.page}>
       {children}
-      {nav.title}
-    </main>
+    </div>
   </div>
 );
 
-export default withStyles(styles)(LandigPage);
+export default withStyles(styles)(LandingPage);
