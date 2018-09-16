@@ -7,6 +7,8 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
 import Link from '../Link';
 
@@ -19,6 +21,7 @@ const styles = (theme:any) => createStyles({
     flexDirection: 'column',
     justifyContent: 'center',
     padding: 32,
+    marginBottom: theme.spacing.unit * 3,
   },
   heroContent: {
     maxWidth: 800,
@@ -36,13 +39,31 @@ const styles = (theme:any) => createStyles({
     color: '#fff',
   },
   card: {
-    paddingTop: 10,
+    height: '100%',
+  },
+  cardAction: {
+    height: '100%',
+    width: '100%',
+  },
+  content: {
+    height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
     textAlign: 'center',
   },
   cardLogo: {
-    maxWidth: 120
+    maxWidth: 120,
+  },
+  caption: {
+    marginTop: theme.spacing.unit * 2,
+    paddingTop: theme.spacing.unit,
+    flex: 1,
+    borderTop: '1px solid gray',
+    borderColor: theme.palette.secondary.light,
+    display: 'flex',
+    alignItems: 'center',
   }
 });
 
@@ -86,18 +107,20 @@ const LandingPage: React.SFC<Props> = ({ title, subtitle, divisions, background,
       {
         divisions.map((d:any) =>
           <Grid key={d.title} item={true} sm={4} md={2}>
-            <Card className={classes.card}>
-              <CardContent>
-                <img className={classes.cardLogo} src={d.logo.childImageSharp.sizes.src}/>
-              </CardContent>
-              <CardActions>
-                <Button fullWidth variant="outlined" color="primary">
-                  <Link to={d.to} lang={lang}>
-                    {d.title}
-                  </Link>
-                </Button>
-              </CardActions>
-            </Card>
+            <Link to={d.to} lang={lang}>
+              <Card className={classes.card}>
+                <CardActionArea className={classes.cardAction}>
+                  <CardContent className={classes.content}>
+                    <img className={classes.cardLogo} src={d.logo.childImageSharp.sizes.src}/>
+                    <div className={classes.caption}>
+                      <Typography variant="caption">
+                        {d.title}
+                      </Typography>
+                    </div>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
           </Grid>
         )
       }
