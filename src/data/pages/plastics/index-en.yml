@@ -39,3 +39,14 @@ company:
 
     - "Innovación, Tecnología, y Servicio Personalizado son los pilares fundamentales de Baple para crear una cooperación fuerte, sostenible y durareda con sus partners. Siendo este el valor añadido que sólo un proveedor especializado es capaz de aportar."
   img: '../../img/plastics/company/plastic-welcome.jpg'
+
+values:
+  title: Ventajas de Baple Plastic
+  img: '../../img/plastics/company/values-image.jpg'
+  text:
+    - "Innovación y Tecnología es la base para poder suministrar productos con los niveles de calidad exigidos por el mercado internacional, ofreciendo soluciones cada vez más modernas y más personalizadas a nuestros partners."
+    - "Debido a los múltiples centros de fabricación, tenemos la capacidad de ofrecer una gran flexibilidad en la personalización de productos y servicios adicionales que aporten valor añadido al consumidor."
+  items:
+    - Innovacion y tecnología
+    - Servicio personalizado
+    - Baple TCS System
