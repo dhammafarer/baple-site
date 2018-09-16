@@ -3,6 +3,7 @@ import DivisionWelcome from '../DivisionWelcome';
 import ProductCards from '../ProductCards';
 import AboutCompany from '../AboutCompany';
 import CompanyValues from '../CompanyValues';
+import SplitImage from '../SplitImage';
 
 interface Props {
   lang: Lang
