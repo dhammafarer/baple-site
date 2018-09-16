@@ -78,17 +78,6 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
             ))
           }
         </List>
-        <div className={classes.langs}>
-          {
-            ['en','es','zh'].map(x =>
-              <Link key={x} to='/' lang={x} className={classes.item}>
-                <Button color={x===lang ? 'default':'secondary'}>
-                  {x}
-                </Button>
-              </Link>
-            )
-          }
-        </div>
       </div>
     </div>
   </Drawer>

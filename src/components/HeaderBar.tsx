@@ -4,6 +4,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
+import Button from "@material-ui/core/Button";
 import MenuIcon from "@material-ui/icons/Menu";
 import Nav from './Nav';
 import { createStyles, withStyles } from "@material-ui/core/styles";
@@ -20,7 +21,7 @@ interface Props {
     logo: any
     home: string
     items: Array<any>
-  }
+  },
 }
 
 const styles = createStyles({
@@ -39,7 +40,8 @@ const styles = createStyles({
   },
   title: {
     textTransform: 'uppercase'
-  }
+  },
+  lang: {}
 });
 
 const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav, lang }) => (
@@ -55,6 +57,21 @@ const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, n
             </Typography>
           </Hidden>
           <div className={classes.grow}/>
+          <div className={classes.langs}>
+            {
+              ['en','es','zh'].map(x =>
+                <Link key={x} to='/' lang={x}>
+                  <Button
+                    className={classes.lang}
+                    size="small"
+                    color={x===lang ? 'default':'secondary'}
+                >
+                    {x}
+                  </Button>
+                </Link>
+              )
+            }
+          </div>
           <IconButton color="primary" onClick={toggleMenu}>
             <MenuIcon/>
           </IconButton>
