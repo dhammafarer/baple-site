@@ -40,6 +40,7 @@ const styles = (theme:any) => createStyles({
   },
   card: {
     height: '100%',
+    maxWidth: 250,
   },
   cardAction: {
     height: '100%',

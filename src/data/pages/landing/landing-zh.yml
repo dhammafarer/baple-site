@@ -13,6 +13,3 @@ divisions:
   - to: /metal-packaging
     title: Baple Metal Packaging
     logo: '../../img/logos/baple-metal-packaging-logo.png'
-  - to: /engineering
-    title: Baple Engineering
-    logo: '../../img/logos/baple-engineering-logo.png'
