@@ -50,3 +50,11 @@ values:
     - Innovacion y tecnología
     - Servicio personalizado
     - Baple TCS System
+
+tcs:
+  title: Baple TCS System
+  img: '../../img/plastics/company/tcs-graph.jpg'
+  text:
+    - "Baple Plastics dispone de un equipo de auditoria especializado cuya misión es inspecionar regularmente, auditar y certificar cada centro de producción."
+    - "Por lo consiguiente, cada producto de Baple Plastics no sólo cumple con nuestros estrictos estándares de calidad, además cumplen con los principales estándares internacionales de calidad, y que son garantizados en las fichas técnicas acordadas antes de cada proyecto."
+    - "Un buen sistema de control de calidad es sinónimo de buen trabajo."

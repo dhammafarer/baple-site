@@ -3,10 +3,14 @@ import { createStyles, withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
+import Hidden from "@material-ui/core/Hidden";
 import Link from './Link';
 
 const styles = (theme:any) => createStyles({
-  page: {
+  section: {
+  },
+  grid: {
+    height: '100%',
     minHeight: 'calc(100vh - 64px)',
   },
   image: {
@@ -18,6 +22,10 @@ const styles = (theme:any) => createStyles({
   },
   text: {
     height: '100%',
+  },
+  imageSm: {
+    width: '100%',
+    height: 'auto',
   }
 });
 
@@ -28,8 +36,11 @@ interface Props {
 }
 
 const CompanyValues: React.SFC<Props> = ({ children, classes, img, reverse }) => (
-  <section>
-    <Grid container className={classes.page} style={{flexDirection: (reverse ? 'row-reverse' : 'row')}}>
+  <section className={classes.section}>
+    <Grid container
+      className={classes.grid}
+      style={{flexDirection: (reverse ? 'row-reverse' : 'row')}}
+    >
       <Grid item xs={12} md={6}>
         <div className={classes.text}>
           {children}
@@ -44,6 +55,9 @@ const CompanyValues: React.SFC<Props> = ({ children, classes, img, reverse }) =>
         />
       </Grid>
     </Grid>
+    <Hidden mdUp>
+      <img className={classes.imageSm} src={img}/>
+    </Hidden>
   </section>
 );
 

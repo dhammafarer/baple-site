@@ -17,6 +17,7 @@ class PlasticsIndexEn extends React.Component<Props, {}> {
         products={data.plasticsYaml.products}
         company={data.plasticsYaml.company}
         values={data.plasticsYaml.values}
+        tcs={data.plasticsYaml.tcs}
       />
     );
   }
@@ -74,6 +75,17 @@ export const query = graphql`
         title
         text
         items
+        img {
+          childImageSharp {
+            sizes (maxWidth: 900) {
+              src
+            }
+          }
+        }
+      }
+      tcs {
+        title
+        text
         img {
           childImageSharp {
             sizes (maxWidth: 900) {

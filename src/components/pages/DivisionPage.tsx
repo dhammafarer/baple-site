@@ -3,7 +3,7 @@ import DivisionWelcome from '../DivisionWelcome';
 import ProductCards from '../ProductCards';
 import AboutCompany from '../AboutCompany';
 import CompanyValues from '../CompanyValues';
-import SplitImage from '../SplitImage';
+import Tcs from '../Tcs';
 
 interface Props {
   lang: Lang
@@ -11,9 +11,10 @@ interface Props {
   products: any
   company: any
   values: any
+  tcs: any
 }
 
-const DivisionPage: React.SFC<Props> = ({ lang, welcome, products, company, values }) => (
+const DivisionPage: React.SFC<Props> = ({ lang, welcome, products, company, values, tcs }) => (
   <div>
     {
       //<DivisionWelcome lang={lang} welcome={welcome}/>
@@ -25,6 +26,7 @@ const DivisionPage: React.SFC<Props> = ({ lang, welcome, products, company, valu
       <ProductCards lang={lang} products={products}/>
       <AboutCompany lang={lang} company={company}/>
       <CompanyValues lang={lang} values={values}/>
+      <Tcs lang={lang} tcs={tcs}/>
   </div>
 );
 
