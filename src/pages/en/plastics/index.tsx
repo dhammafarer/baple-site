@@ -14,7 +14,7 @@ class PlasticsIndexEn extends React.Component<Props, {}> {
       <DivisionPage
         lang={'en'}
         welcome={data.plasticsYaml.welcome}
-        products={data.plasticsYaml.products}
+        categories={data.plasticsYaml.categories}
         company={data.plasticsYaml.company}
         values={data.plasticsYaml.values}
         tcs={data.plasticsYaml.tcs}
@@ -46,7 +46,7 @@ export const query = graphql`
           }
         }
       }
-      products {
+      categories {
         title
         items {
           title

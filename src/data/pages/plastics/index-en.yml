@@ -4,26 +4,26 @@ welcome:
   logo: "../../img/logos/baple-plastics-logo.png"
   subtitle: Because innovation sells packaging, and packaging sells products.
 
-products:
+categories:
   title: Product Categories
   items:
     - title: Pulverizadores
-      to: "/en/plastics/pulverizadores"
+      to: "/plastics/pulverizadores"
       img: "../../img/plastics/icons/pulverizadores-logo.png"
     - title: Bombas de locion
-      to: "/en/plastics/bombas-de-locion"
+      to: "/plastics/bombas-de-locion"
       img: "../../img/plastics/icons/bombas-locion-logo.png"
     - title: Micro pulverizadores
-      to: "/en/plastics/micro-pulverizadores"
+      to: "/plastics/micro-pulverizadores"
       img: "../../img/plastics/icons/micropulverizador-logo.png"
     - title: Tapon antigoteo
-      to: "/en/plastics/tapon-antigoteo"
+      to: "/plastics/tapon-antigoteo"
       img: "../../img/plastics/icons/tapon-antigoteo-logo.png"
     - title: Tapon de plástico
-      to: "/en/plastics/tapones-de-plastico"
+      to: "/plastics/tapones-de-plastico"
       img: "../../img/plastics/icons/tapones-de-plastico-logo.png"
     - title: Botes de plástico
-      to: "/en/plastics/botes-de-plastico"
+      to: "/plastics/botes-de-plastico"
       img: "../../img/plastics/icons/botes-de-plastico-logo.png"
 
 company:

@@ -8,7 +8,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import Link from './Link';
 
 const styles = (theme:any) => createStyles({
-  products: {
+  categories: {
     padding: theme.spacing.unit * 3,
     minHeight: '100vh',
     display: 'flex',
@@ -39,12 +39,12 @@ const styles = (theme:any) => createStyles({
 
 interface Props {
   lang: Lang
-  products: any
+  categories: any
   classes: any
 }
 
-const ProductCards: React.SFC<Props> = ({ products, classes, lang }) => (
-  <section className={classes.products}>
+const ProductCards: React.SFC<Props> = ({ categories, classes, lang }) => (
+  <section className={classes.categories}>
     <Typography
       className={classes.title}
       variant="display1"
@@ -52,10 +52,10 @@ const ProductCards: React.SFC<Props> = ({ products, classes, lang }) => (
       align="center"
       color="primary"
     >
-      {products.title}
+      {categories.title}
     </Typography>
     <Grid container spacing={16}>
-      {products.items.map((x:any) =>
+      {categories.items.map((x:any) =>
         <Grid key={x.title}item xs={12} md={4} xl={2}>
           <Card className={classes.card}>
             <CardActionArea className={classes.cardAction}>

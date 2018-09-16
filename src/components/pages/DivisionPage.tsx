@@ -8,22 +8,16 @@ import Tcs from '../Tcs';
 interface Props {
   lang: Lang
   welcome: any
-  products: any
+  categories: any
   company: any
   values: any
   tcs: any
 }
 
-const DivisionPage: React.SFC<Props> = ({ lang, welcome, products, company, values, tcs }) => (
+const DivisionPage: React.SFC<Props> = ({ lang, welcome, categories, company, values, tcs }) => (
   <div>
-    {
-      //<DivisionWelcome lang={lang} welcome={welcome}/>
-      //<ProductCards lang={lang} products={products}/>
-      //<AboutCompany lang={lang} company={company}/>
-      //<CompanyValues lang={lang} values={values}/>
-    }
       <DivisionWelcome lang={lang} welcome={welcome}/>
-      <ProductCards lang={lang} products={products}/>
+      <ProductCards lang={lang} categories={categories}/>
       <AboutCompany lang={lang} company={company}/>
       <CompanyValues lang={lang} values={values}/>
       <Tcs lang={lang} tcs={tcs}/>

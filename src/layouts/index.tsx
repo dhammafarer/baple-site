@@ -1,6 +1,4 @@
 import * as React from 'react';
-import * as locale from '../utils/locale';
-import { navigateTo } from 'gatsby-link';
 
 import withRoot from '../utils/withRoot';
 import Helmet from 'react-helmet';
@@ -22,9 +20,6 @@ interface Props {
 }
 
 class DefaultLayout extends React.Component<Props, {}> {
-  componentDidMount () {
-    navigateTo(locale.getLocale());
-  }
   render () {
     const {children, data, location} = this.props;
     return (

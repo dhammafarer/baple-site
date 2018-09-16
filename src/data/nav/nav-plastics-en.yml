@@ -4,16 +4,8 @@ nav:
   home: '/plastics'
   items:
     -
-      - to: /wines
-        label: Baple Wines
-      - to: /plastics
-        label: Baple Plastics
-      - to: /metal-packaging
-        label: Baple Metal Packaging
-      - to: /energy
-        label: Baple Energy
-      - to: /engineering
-        label: Baple Engineering
+      - to: /plastics/pulverizadores
+        label: Pulverizadores
     -
       - to: /
         label: Baple Group
