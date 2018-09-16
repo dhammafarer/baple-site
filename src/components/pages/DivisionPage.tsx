@@ -1,18 +1,20 @@
 import * as React from 'react';
 import DivisionWelcome from '../DivisionWelcome';
 import ProductCards from '../ProductCards';
+import AboutCompany from '../AboutCompany';
 
 interface Props {
   lang: Lang
-  classes: any
   welcome: any
   products: any
+  company: any
 }
 
-const DivisionPage: React.SFC<Props> = ({ classes, lang, welcome, products }) => (
+const DivisionPage: React.SFC<Props> = ({ lang, welcome, products, company }) => (
   <div>
-      <DivisionWelcome lang={lang} welcome={welcome}/>
-      <ProductCards lang={lang} products={products}/>
+    <DivisionWelcome lang={lang} welcome={welcome}/>
+    <ProductCards lang={lang} products={products}/>
+    <AboutCompany lang={lang} company={company}/>
   </div>
 );
 

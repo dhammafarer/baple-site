@@ -12,8 +12,10 @@ class PlasticsIndexEn extends React.Component<Props, {}> {
     const {data} = this.props;
     return (
       <DivisionPage
+        lang={'en'}
         welcome={data.plasticsYaml.welcome}
         products={data.plasticsYaml.products}
+        company={data.plasticsYaml.company}
       />
     );
   }
@@ -52,6 +54,17 @@ export const query = graphql`
               sizes (maxWidth: 100) {
                 src
               }
+            }
+          }
+        }
+      }
+      company {
+        title
+        text
+        img {
+          childImageSharp {
+            sizes (maxWidth: 900) {
+              src
             }
           }
         }

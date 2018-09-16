@@ -16,6 +16,9 @@ const styles = (theme:any) => createStyles({
     paddingTop: theme.spacing.unit * 3,
     paddingBottom: theme.spacing.unit * 3,
   },
+  footer: {
+    marginTop: theme.spacing.unit * 3,
+  },
   footerSocial: {
     backgroundColor: theme.palette.primary.light,
     textAlign: 'center'
@@ -52,7 +55,7 @@ interface Props {
 }
 
 const Footer: React.SFC<Props> = ({ classes, logo }) => (
-  <footer>
+  <footer className={classes.footer}>
     <div className={classNames(classes.footerAddress, classes.layout)}>
       <img className={classes.logo} src={logo.childImageSharp.sizes.src}/>
       <div className={classes.contact}>

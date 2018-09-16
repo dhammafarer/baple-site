@@ -9,8 +9,11 @@ import Link from './Link';
 
 const styles = (theme:any) => createStyles({
   products: {
-    margin: '1em 0',
     padding: theme.spacing.unit * 3,
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   card: {
     display: 'flex',
