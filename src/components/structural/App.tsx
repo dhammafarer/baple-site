@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import Head from './Head';
+import Head from '../Head';
 import Header from './Header';
 import Footer from './Footer';
 import CssBaseline from "@material-ui/core/CssBaseline";

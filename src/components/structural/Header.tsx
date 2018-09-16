@@ -1,5 +1,5 @@
 import * as React from 'react';
-import HeaderBar from './HeaderBar';
+import HeaderBar from '../HeaderBar';
 
 interface Props {
   lang: Lang

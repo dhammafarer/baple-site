@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import Head from './Head';
+import Head from '../Head';
 import Header from './Header';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { withStyles, createStyles } from "@material-ui/core/styles";
@@ -29,7 +29,7 @@ const styles = (theme:any) => createStyles({
   }
 });
 
-const LandingPage: React.SFC<Props> = ({ title, children, classes, nav, lang }) => (
+const AppLanding: React.SFC<Props> = ({ title, children, classes, nav, lang }) => (
   <div className={classes.layout}>
     <CssBaseline/>
     <Head title={title} lang={lang}/>
@@ -40,4 +40,4 @@ const LandingPage: React.SFC<Props> = ({ title, children, classes, nav, lang }) 
   </div>
 );
 
-export default withStyles(styles)(LandingPage);
+export default withStyles(styles)(AppLanding);

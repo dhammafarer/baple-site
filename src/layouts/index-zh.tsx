@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import withRoot from '../utils/withRoot';
-import LandingPage from '../components/LandingPage';
+import AppLanding from '../components/structural/AppLanding';
 
 interface Props {
   children: any
@@ -27,13 +27,13 @@ class DefaultLayoutZh extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
-      <LandingPage
+      <AppLanding
         title={data.site.siteMetadata.title.zh}
         nav={data.navYaml.nav}
         lang={'zh'}
       >
         {children()}
-      </LandingPage>
+      </AppLanding>
     );
   }
 }

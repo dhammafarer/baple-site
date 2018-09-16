@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import withRoot from '../utils/withRoot';
-import App from '../components/App';
+import App from '../components/structural/App';
 
 interface Props {
   children: any
