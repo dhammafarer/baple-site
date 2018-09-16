@@ -15,6 +15,9 @@ const styles = (theme:any) => createStyles({
     flexDirection: 'column',
     justifyContent: 'center',
   },
+  title: {
+    marginBottom: '0.6em',
+  },
   card: {
     display: 'flex',
     height: '100%',
@@ -42,7 +45,13 @@ interface Props {
 
 const ProductCards: React.SFC<Props> = ({ products, classes, lang }) => (
   <section className={classes.products}>
-    <Typography variant="display1" gutterBottom align="center" color="primary">
+    <Typography
+      className={classes.title}
+      variant="display1"
+      gutterBottom
+      align="center"
+      color="primary"
+    >
       {products.title}
     </Typography>
     <Grid container spacing={16}>

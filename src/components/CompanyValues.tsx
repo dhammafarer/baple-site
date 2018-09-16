@@ -13,9 +13,9 @@ const styles = (theme:any) => createStyles({
     textAlign: 'center',
     justifyContent: 'center',
     alignItems: 'center',
-    maxWidth: 400,
-    paddingTop: theme.spacing.unit * 3,
-    paddingBottom: theme.spacing.unit * 3,
+    maxWidth: 600,
+    paddingTop: theme.spacing.unit * 6,
+    paddingBottom: theme.spacing.unit * 6,
     margin: '0 auto',
   },
   value: {
