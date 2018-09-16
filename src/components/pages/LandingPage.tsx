@@ -85,7 +85,7 @@ const LandingPage: React.SFC<Props> = ({ title, subtitle, divisions, background,
     <Grid container={true} spacing={32} justify="center">
       {
         divisions.map((d:any) =>
-          <Grid item={true} sm={4} md={2}>
+          <Grid key={d.title} item={true} sm={4} md={2}>
             <Card className={classes.card}>
               <CardContent>
                 <img className={classes.cardLogo} src={d.logo.childImageSharp.sizes.src}/>
