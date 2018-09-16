@@ -3,11 +3,13 @@ import Helmet from 'react-helmet';
 
 interface Props {
   title: string
+  lang: Lang
 }
 
-const Head: React.SFC<Props> = ({ title }) => (
+const Head: React.SFC<Props> = ({ lang, title }) => (
   <Helmet
     title={title}
+    htmlAttributes={{lang: lang}}
     meta={[
       {name: 'description', content: 'Baple Group'},
     ]}

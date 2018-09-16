@@ -35,7 +35,7 @@ const styles = (theme:any) => createStyles({
 const App: React.SFC<Props> = ({ title, children, nav, classes, lang }) => (
   <div className={classes.layout}>
     <CssBaseline/>
-    <Head title={title}/>
+    <Head title={title} lang={lang}/>
     <Header lang={lang} nav={nav}/>
     <main className={classes.main}>
       {children}

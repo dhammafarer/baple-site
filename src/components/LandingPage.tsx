@@ -32,7 +32,7 @@ const styles = (theme:any) => createStyles({
 const LandingPage: React.SFC<Props> = ({ title, children, classes, nav, lang }) => (
   <div className={classes.layout}>
     <CssBaseline/>
-    <Head title={title}/>
+    <Head title={title} lang={lang}/>
     <Header lang={lang} nav={nav}/>
     <div className={classes.page}>
       {children}
