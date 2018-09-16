@@ -1,0 +1,18 @@
+title: 歡迎到 Baple Group
+subtitle: 請選擇部門
+divisions:
+  - to: /wines
+    title: Baple Wines
+    logo: '../../img/logos/baple-wines-logo.png'
+  - to: /plastics
+    title: Baple Plastics
+    logo: '../../img/logos/baple-plastics-logo.png'
+  - to: /energy
+    title: Baple Energy
+    logo: '../../img/logos/baple-energy-logo.png'
+  - to: /metal-packaging
+    title: Baple Metal Packaging
+    logo: '../../img/logos/baple-metal-packaging-logo.png'
+  - to: /engineering
+    title: Baple Engineering
+    logo: '../../img/logos/baple-engineering-logo.png'
