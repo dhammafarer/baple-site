@@ -13,7 +13,7 @@ class PlasticsIndexEn extends React.Component<Props, {}> {
     return (
       <DivisionPage
         welcome={data.plasticsYaml.welcome}
-        icons={data.plasticsYaml.icons}
+        products={data.plasticsYaml.products}
       />
     );
   }
@@ -42,7 +42,7 @@ export const query = graphql`
           }
         }
       }
-      icons {
+      products {
         title
         items {
           title

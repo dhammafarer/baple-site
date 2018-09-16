@@ -4,7 +4,7 @@ welcome:
   logo: "../../img/logos/baple-plastics-logo.png"
   subtitle: Because innovation sells packaging, and packaging sells products.
 
-icons:
+products:
   title: Product Categories
   items:
     - title: Pulverizadores
