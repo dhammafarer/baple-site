@@ -3,6 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import Hidden from "@material-ui/core/Hidden";
 import MenuIcon from "@material-ui/icons/Menu";
 import Nav from './Nav';
 import { createStyles, withStyles } from "@material-ui/core/styles";
@@ -48,9 +49,11 @@ const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, n
           <Link lang={lang} to={nav.home}>
             <img className={classes.logo} src={nav.logo.childImageSharp.sizes.src}/>
           </Link>
-          <Typography variant="title" color="primary" className={classes.title}>
-            {nav.title}
-          </Typography>
+          <Hidden smDown>
+            <Typography variant="title" color="primary" className={classes.title}>
+              {nav.title}
+            </Typography>
+          </Hidden>
           <div className={classes.grow}/>
           <IconButton color="primary" onClick={toggleMenu}>
             <MenuIcon/>

@@ -13,6 +13,7 @@ class PlasticsIndexEn extends React.Component<Props, {}> {
     return (
       <DivisionPage
         welcome={data.plasticsYaml.welcome}
+        icons={data.plasticsYaml.icons}
       />
     );
   }
