@@ -18,8 +18,12 @@ const DivisionPage: React.SFC<Props> = ({ lang, welcome, products, company, valu
       //<DivisionWelcome lang={lang} welcome={welcome}/>
       //<ProductCards lang={lang} products={products}/>
       //<AboutCompany lang={lang} company={company}/>
+      //<CompanyValues lang={lang} values={values}/>
     }
-    <CompanyValues lang={lang} values={values}/>
+      <DivisionWelcome lang={lang} welcome={welcome}/>
+      <ProductCards lang={lang} products={products}/>
+      <AboutCompany lang={lang} company={company}/>
+      <CompanyValues lang={lang} values={values}/>
   </div>
 );
 

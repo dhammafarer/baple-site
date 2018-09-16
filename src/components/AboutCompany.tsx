@@ -17,7 +17,7 @@ const styles = (theme:any) => createStyles({
   paper: {
     margin: '0 auto',
     maxWidth: 600,
-    padding: theme.spacing.unit * 3,
+    padding: theme.spacing.unit * 4,
   }
 });
 

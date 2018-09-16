@@ -49,7 +49,7 @@ interface Props {
 const DivisionWelcome: React.SFC<Props> = ({ welcome, classes, lang }) => (
   <section>
     <Grid container={true} className={classes.welcome}>
-      <Grid item={true} xs={12} md={6}>
+      <Grid item={true} xs={0} md={6}>
         <div
           className={classes.image}
           style={{

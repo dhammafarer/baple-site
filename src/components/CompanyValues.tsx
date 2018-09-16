@@ -76,7 +76,7 @@ const CompanyValues: React.SFC<Props> = ({ values, classes, lang }) => (
           </div>
         </div>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={0} md={6}>
         <div
           className={classes.image}
           style={{
