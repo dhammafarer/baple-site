@@ -1,0 +1,121 @@
+##### PLASTICS INDEX PAGE
+#### Please fill in correctly
+#### You can leave any field empty and it will not show on the page
+
+### This is the welcome section 
+welcome:
+  heading: Baple Plastics
+  subheading: Landing Page Subheading
+  logo: baple-plastics-logo.png
+  mainImg: langing-page-background.jpg
+  text:
+    - "Paragraph One"
+    - "Paragraph Two"
+  imgs:
+    - extra-image-one.jpg
+    - extra-image-two.jpg
+  link:
+    label: Contact us!
+    to: /contact
+
+### Section with product categories
+categories:
+  heading: Our Products
+  subheading: Select a category
+  logo: 
+  mainImg: 
+  imgs:
+  link:
+    label: 
+    to:
+  items:
+    - heading: Pulverizadores
+      subheading:
+      img: pulverizadores-logo.png
+      link:
+        label:
+        to: /plastics/pulverizadores
+    - heading: Bombas de locion
+      subheading:
+      img: bombas-de-locion-logo.png
+      link:
+        label:
+        to: /plastics/bombas-de-locion
+
+### Section about Baple
+about:
+  heading: About Baple
+  subheading: 
+  mainImg: 
+  logo: 
+  text:
+    - "Paragraph one about how we started"
+    - "Paragraph two about the bar where we finished"
+  imgs:
+  link:
+    label: Learn more about Baple!
+    to: /plastics/about
+
+### Section about Values
+values:
+  heading: Our values
+  subheading: 
+  mainImg: 
+  points:
+    - Honesty
+    - Integrity
+    - Joga bonito
+  logo: 
+  text:
+    - "Paragraph one"
+    - "Paragraph two"
+  imgs:
+  link:
+    label: 
+    to:
+
+### Section about advantages
+advantages:
+  heading: Advantages
+  subheading: 
+  mainImg: 
+  points:
+    - Personal service
+    - Ballon d'Or
+    - Joga bonito
+  logo: 
+  text:
+    - "Paragraph one"
+    - "Paragraph two"
+  imgs:
+  link:
+    label: 
+    to:
+
+### Section about TCS
+tcs:
+  heading: Baple TCS
+  subheading: 
+  mainImg: 
+  logo: 
+  text:
+    - "Paragraph one"
+    - "Paragraph two"
+  imgs:
+  link:
+    label: 
+    to:
+
+### Section about QAS
+qas:
+  heading: Baple QAS
+  subheading: 
+  mainImg: 
+  logo: 
+  text:
+    - "Paragraph one"
+    - "Paragraph two"
+  imgs:
+  link:
+    label: 
+    to:

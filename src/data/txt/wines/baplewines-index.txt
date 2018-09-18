@@ -1,0 +1,37 @@
+#### BAPLE LANDING PAGE
+### This is the page heading
+heading: Landing Page Heading
+
+### This is the smaller text under the heading
+subheading: Landing Page Subheading
+
+### This is the background image
+mainImg: langing-page-background.png
+
+### These are division links, you can add more
+#   Each division starts with "-"
+#   Just copy paste and change details
+divisions:
+  - heading: Baple Plastics
+    logo: baple-plastics-logo.png
+    link: 
+      to: /plastics
+      label: Link text
+
+  - heading: Baple Energy
+    logo: baple-energy-logo.png
+    link: 
+      to: /energy
+      label: Link text
+
+  - heading: Baple Metal Packaging
+    logo: baple-metal-packaging-logo.png
+    link: 
+      to: /metal-packaging
+      label: Link text
+
+  - heading: Baple Engineering
+    logo: baple-engineering-logo.png
+    link: 
+      to: /engineering
+      label: Link text

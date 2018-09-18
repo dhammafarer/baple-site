@@ -1,0 +1,25 @@
+##### PLASTICS CONTACT PAGE
+#### Please fill in correctly
+#### You can leave any field empty and it will not show on the page
+
+### This is the contact section 
+contact:
+  heading: Contact us!
+  subheading: We are friendly
+  logo: baple-plastics-logo.png
+  mainImg:
+  text:
+    - "Paragraph One"
+    - "Paragraph Two"
+  imgs:
+    - extra-image-one.jpg
+    - extra-image-two.jpg
+  link:
+    label: 
+    to:
+  details:
+    email: info@baple.es
+    phone: +886-1234-5678
+    address:
+      - "Line 1"
+      - "Line 2"
