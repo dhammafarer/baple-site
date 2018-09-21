@@ -1,5 +1,6 @@
 heading: Welcome to Baple Group
 subheading: Please select a division
+background: './img/landing-background.jpg'
 divisions:
   - logo: './img/logos/baple-plastics-logo.png'
     link:
