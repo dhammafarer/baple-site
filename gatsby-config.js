@@ -1,10 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: {
-      en: 'Baple EN',
-      es: 'Baple ES',
-      zh: 'Baple ZH'
-    },
+    title: 'Baple Group'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import withRoot from '../utils/withRoot';
-import Helmet from 'react-helmet';
+import App from '../components/structural/App';
 
 interface Props {
   children: any
@@ -11,11 +11,12 @@ interface Props {
   data: {
     site: {
       siteMetadata: {
-        title: {
-          en: string
-        }
+        title: string
       }
     }
+    background: any
+    logo: any
+    nav: any
   }
 }
 
@@ -23,21 +24,14 @@ class DefaultLayout extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
-      <div>
-        <Helmet
-          title={this.props.data.site.siteMetadata.title.en}
-          meta={[
-            {name: 'description', content: 'Baple Group'},
-          ]}
-          link={[
-            {rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500"},
-            {rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons"}
-          ]}
-        />
-        <div>
-          {children()}
-        </div>
-      </div>
+      <App
+        title={data.site.siteMetadata.title}
+        nav={data.nav}
+        lang={'es'}
+        logo={data.logo.sizes.src}
+      >
+        {children()}
+      </App>
     );
   }
 }
@@ -48,10 +42,21 @@ export const query = graphql`
   query DefaultLayoutQuery {
     site {
       siteMetadata {
-        title {
-          en
-        }
+        title
       }
+    }
+    logo: imageSharp(id: {regex: "/LOGO_Baple_Plastics.png/"}) {
+      sizes(maxWidth: 120) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    background: imageSharp(id: {regex: "/welcome.jpg/"}) {
+      sizes(maxWidth: 1920, quality: 50) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    nav: pagesYaml(id: {regex: "/nav-index.yml/"}) {
+     ...NavPagesYaml
     }
   }
 `;

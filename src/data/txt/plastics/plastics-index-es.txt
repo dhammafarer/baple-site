@@ -4,24 +4,22 @@
 
 ### This is the welcome section 
 welcome:
-  heading: Baple Plastics
-  subheading: Landing Page Subheading
+  heading: 
+  subheading: 
   logo: baple-plastics-logo.png
   mainImg: langing-page-background.jpg
   text:
-    - "Paragraph One"
-    - "Paragraph Two"
+    - "Because innovation sells packaging and packaging sells products"
+    - "Porque innovación vende packaging y el packaging vende productos"
   imgs:
-    - extra-image-one.jpg
-    - extra-image-two.jpg
   link:
     label: Contact us!
     to: /contact
 
 ### Section with product categories
 categories:
-  heading: Our Products
-  subheading: Select a category
+  heading: Soluciones de Plástico para usos generales
+  subheading: 
   logo: 
   mainImg: 
   imgs:
@@ -41,81 +39,46 @@ categories:
       link:
         label:
         to: /plastics/bombas-de-locion
+    - heading: Micropulverizadores
+      subheading:
+      img: micropulverizadores-logo.png
+      link:
+        label:
+        to: /plastics/micropulverizadores
+    - heading: Tapones
+      subheading:
+      img: tapones-logo.png
+      link:
+        label:
+        to: /plastics/tapones
+    - heading: Botellas
+      subheading:
+      img: botellas-logo.png
+      link:
+        label:
+        to: /plastics/botellas
 
-### Section about Baple
-about:
-  heading: About Baple
-  subheading: 
-  mainImg: 
-  logo: 
-  text:
-    - "Paragraph one about how we started"
-    - "Paragraph two about the bar where we finished"
-  imgs:
-  link:
-    label: Learn more about Baple!
-    to: /plastics/about
-
-### Section about Values
-values:
-  heading: Our values
-  subheading: 
-  mainImg: 
-  points:
-    - Honesty
-    - Integrity
-    - Joga bonito
-  logo: 
-  text:
-    - "Paragraph one"
-    - "Paragraph two"
-  imgs:
-  link:
-    label: 
-    to:
-
-### Section about advantages
-advantages:
-  heading: Advantages
-  subheading: 
-  mainImg: 
-  points:
-    - Personal service
-    - Ballon d'Or
-    - Joga bonito
-  logo: 
-  text:
-    - "Paragraph one"
-    - "Paragraph two"
-  imgs:
-  link:
-    label: 
-    to:
-
-### Section about TCS
-tcs:
-  heading: Baple TCS
-  subheading: 
-  mainImg: 
-  logo: 
-  text:
-    - "Paragraph one"
-    - "Paragraph two"
-  imgs:
-  link:
-    label: 
-    to:
-
-### Section about QAS
+### Section Quieres saber más de nosotros?
 qas:
-  heading: Baple QAS
+  heading: Quieres saber más de nosotros?
   subheading: 
-  mainImg: 
+  mainImg: baple-plastics-logo.png
   logo: 
   text:
-    - "Paragraph one"
-    - "Paragraph two"
+   
+  imgs:
+    link:
+    label: 
+
+### Section Contact us
+qas:
+  heading: Contact us
+  subheading: 
+  mainImg: baple-plastics-logo.png
+  logo: 
+  text:
   imgs:
   link:
-    label: 
-    to:
+    label: Contact us!
+    to: /contact
+

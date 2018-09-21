@@ -9,19 +9,17 @@ import IconButton from "@material-ui/core/IconButton";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import { createStyles, withStyles } from "@material-ui/core/styles";
-import Link from './Link';
+import Link from 'gatsby-link';
 import CloseIcon from "@material-ui/icons/Close";
 
 interface Props {
-  lang: Lang
   classes: any
   handleClose: any
   open: any
+  logo: string
+  title: string
   nav: {
-    title: string
-    logo: any
-    home: string
-    items: Array<any>
+    links: Array<any>
   }
 }
 
@@ -67,7 +65,7 @@ const styles = (theme:any) => createStyles({
   }
 });
 
-const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
+const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) => (
   <Drawer anchor="right" open={open} onClose={handleClose}>
     <div
       tabIndex={0}
@@ -80,11 +78,11 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
         <CloseIcon color="secondary"/>
       </IconButton>
       <List>
-        <img className={classes.logo} src={nav.logo.childImageSharp.sizes.src}/>
-        <Typography variant="title" gutterBottom={true}>{nav.title}</Typography>
+        <img className={classes.logo} src={logo}/>
+        <Typography variant="title" gutterBottom={true}>{title}</Typography>
         {
-          nav.items.map((xs:any) => xs.map((x:any) =>
-            <Link to={x.to} lang={lang}>
+          nav.links.map((x:any) =>
+            <Link to={x.to}>
               <ListItem button={true} divider={true} style={{justifyContent: "center"}}>
                 <Typography
                   variant="caption"
@@ -96,7 +94,7 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
                 </Typography>
               </ListItem>
             </Link>
-          ))
+          )
         }
       </List>
       <div className={classes.contact}>
@@ -118,3 +116,12 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, lang }) => (
 );
 
 export default withStyles(styles)(Nav);
+
+export const NavFragment = graphql`
+  fragment NavPagesYaml on PagesYaml {
+    links {
+      to
+      label
+    }
+  }
+`;

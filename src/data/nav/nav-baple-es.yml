@@ -4,8 +4,6 @@ nav:
   home: '/'
   items:
     -
-      - to: /wines
-        label: Baple Wines
       - to: /plastics
         label: Baple Plastics
       - to: /metal-packaging

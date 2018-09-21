@@ -1,0 +1,73 @@
+##### PLASTICS INDEX PAGE
+#### Please fill in correctly
+#### You can leave any field empty and it will not show on the page
+
+### This is the welcome section 
+welcome:
+  heading: 
+  subheading: 
+  logo: "./img/LOGO_Baple_Plastics.png"
+  mainImg: 
+  text:
+    - "Because innovation sells packaging and packaging sells products"
+    - "Porque innovación vende packaging y el packaging vende productos"
+  imgs:
+  link:
+    label: Contact us!
+    to: /contact
+
+### Section with product categories
+categories:
+  heading: Soluciones de Plástico para usos generales
+  subheading: 
+  logo: 
+  mainImg: 
+  imgs:
+  link:
+    label: 
+    to:
+  items:
+    - heading: Pulverizadores
+      subheading:
+      img: "./img/icons/pulverizadores-logo.png"
+      link:
+        label:
+        to: /plastics/pulverizadores
+    - heading: Bombas de locion
+      subheading:
+      img: "./img/icons/bombas-de-locion-logo.png"
+      link:
+        label:
+        to: /plastics/bombas-de-locion
+    - heading: Micropulverizadores
+      subheading:
+      img: "./img/icons/micropulverizadores-logo.png"
+      link:
+        label:
+        to: /plastics/micropulverizadores
+    - heading: Tapones
+      subheading:
+      img: "./img/icons/tapones-de-plastico-logo.png"
+      link:
+        label:
+        to: /plastics/tapones
+    - heading: Botellas
+      subheading:
+      img: "./img/icons/botes-de-plastico-logo.png"
+      link:
+        label:
+        to: /plastics/botellas
+
+### Section Contact us
+contact:
+  heading: Contact us
+  subheading: Quieres saber más de nosotros? 
+  mainImg: baple-plastics-logo.png
+  logo: 
+  text:
+  imgs:
+    link:
+    label: Contact us!
+    to: /contact
+
+

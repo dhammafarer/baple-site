@@ -1,21 +1,28 @@
 import * as React from 'react';
 import GatsbyLink from 'gatsby-link';
+import withLang from '../utils/withLang';
+import { WithStyles, createStyles } from '@material-ui/core';
 
 interface Props {
-  lang: string
+  lang: Lang
   to: string
-  className?: any
-  style?: any
+  classes: any
 }
 
-const Link: React.SFC<Props> = ({ children, lang, to, className, style }) => (
+const style = createStyles({
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+  }
+});
+
+const Link: React.SFC<Props> = ({ children, lang, to, classes }) => (
   <GatsbyLink
-    className={className}
-    style={{textDecoration: 'none', color: 'inherit'}}
+    className={classes.link}
     to={'/' + lang + to}
   >
     {children}
   </GatsbyLink>
 );
 
-export default Link;
+export default withLang(Link);
