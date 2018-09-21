@@ -1,6 +1,6 @@
-import { createStyles } from "@material-ui/core/styles";
+import { createStyles, Theme } from "@material-ui/core/styles";
 
-const layoutStyles = (theme:any) => createStyles({
+const layoutStyles = (theme:Theme) => createStyles({
   layout: {
     display: 'flex',
     flexDirection: 'column',

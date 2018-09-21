@@ -25,10 +25,10 @@ class PlasticsLayout extends React.Component<Props, {}> {
     const {children, data, location} = this.props;
     return (
       <App
-        title={data.site.siteMetadata.title}
-        nav={data.nav}
         lang={'es'}
+        title={data.site.siteMetadata.title}
         logo={data.logo.sizes.src}
+        nav={data.nav}
       >
         {children()}
       </App>

@@ -4,15 +4,15 @@ import Head from '../Head';
 import Header from './Header';
 import Footer from './Footer';
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles, WithStyles } from "@material-ui/core/styles";
 import layoutStyles from '../../styles/layout';
 
 interface Props {
   lang: Lang
   title: string
   logo: string
-  classes: any
   nav: any
+  classes: any
 }
 
 const App: React.SFC<Props> = ({ title, logo, children, nav, classes, lang }) => (
