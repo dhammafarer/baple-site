@@ -1,18 +1,19 @@
-title: Welcome to Baple Group
-subtitle: Please select a division
+heading: Welcome to Baple Group
+subheading: Please select a division
 divisions:
-  - to: /wines
-    title: Baple Wines
-    logo: '../../img/logos/baple-wines-logo.png'
-  - to: /plastics
-    title: Baple Plastics
-    logo: '../../img/logos/baple-plastics-logo.png'
-  - to: /energy
-    title: Baple Energy
-    logo: '../../img/logos/baple-energy-logo.png'
-  - to: /metal-packaging
-    title: Baple Metal Packaging
-    logo: '../../img/logos/baple-metal-packaging-logo.png'
-  - to: /engineering
-    title: Baple Engineering
-    logo: '../../img/logos/baple-engineering-logo.png'
+  - logo: './img/logos/baple-plastics-logo.png'
+    link:
+      to: /plastics
+      label: Baple Plastics
+  - logo: './img/logos/baple-energy-logo.png'
+    link:
+      to: /energy
+      label: Baple Energy
+  - logo: './img/logos/baple-metal-packaging-logo.png'
+    link:
+      to: /metal-packaging
+      label: Baple Metal Packaging
+  - logo: './img/logos/baple-engineering-logo.png'
+    link:
+      to: /engineering
+      label: Baple Engineering
