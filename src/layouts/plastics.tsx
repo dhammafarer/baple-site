@@ -14,7 +14,6 @@ interface Props {
         title: string
       }
     }
-    background: any
     logo: any
     nav: any
   }
@@ -47,11 +46,6 @@ export const query = graphql`
     }
     logo: imageSharp(id: {regex: "/LOGO_Baple_Plastics.png/"}) {
       sizes(maxWidth: 120) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    background: imageSharp(id: {regex: "/welcome.jpg/"}) {
-      sizes(maxWidth: 1920, quality: 50) {
         ...GatsbyImageSharpSizes
       }
     }

@@ -2,12 +2,12 @@
 #### Please fill in correctly
 #### You can leave any field empty and it will not show on the page
 
-### This is the welcome section 
+### This is the welcome section
 welcome:
-  heading: 
-  subheading: 
-  logo: "./img/LOGO_Baple_Plastics.png"
-  mainImg: 
+  heading:
+  subheading:
+  logo: "./img/logos/baple-plastics-logo.png"
+  mainImg:
   text:
     - "Because innovation sells packaging and packaging sells products"
     - "Porque innovación vende packaging y el packaging vende productos"
@@ -19,12 +19,12 @@ welcome:
 ### Section with product categories
 categories:
   heading: Soluciones de Plástico para usos generales
-  subheading: 
-  logo: 
-  mainImg: 
+  subheading:
+  logo:
+  mainImg:
   imgs:
   link:
-    label: 
+    label:
     to:
   items:
     - heading: Pulverizadores
@@ -61,9 +61,9 @@ categories:
 ### Section Contact us
 contact:
   heading: Contact us
-  subheading: Quieres saber más de nosotros? 
+  subheading: Quieres saber más de nosotros?
   mainImg: baple-plastics-logo.png
-  logo: 
+  logo:
   text:
   imgs:
     link:

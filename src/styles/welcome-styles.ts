@@ -1,25 +1,37 @@
 import { createStyles, Theme } from "@material-ui/core/styles";
 
 const welcomeStyles = (theme:Theme) => createStyles({
-  welcomeText: {
+  section: {
+    background: theme.palette.grey[200],
+    padding: '3em 0',
     height: '100%',
+    width: '100%',
+    justifyConent: 'center',
     display: 'flex',
     flexDirection: 'column',
-    textAlign: 'center',
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row'
+    }
+  },
+  logo: {
+    width: 250,
+    height: 250,
+  },
+  text: {
+    margin: '2em 0.6em',
     maxWidth: 400,
-    margin: '0 auto',
+    textAlign: 'center',
   },
-  welcomeTitle: {
-    textTransform: 'uppercase',
+  english: {
+    fontFamily: 'Cedarville Cursive, sans-serif',
+    color: theme.palette.grey[900],
+    marginBottom: '1.2em',
   },
-  welcomeSubtitle: {
-  },
-  welcomeLogo: {
-    width: 150,
-    height: 150,
-    marginBottom: '1em',
+  spanish: {
+    color: theme.palette.grey[900],
+    fontWeight: 300,
   },
 });
 

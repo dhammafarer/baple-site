@@ -41,7 +41,7 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) 
         <Typography variant="title" gutterBottom={true}>{title}</Typography>
         {
           nav.links.map((x:any) =>
-            <Link to={x.to}>
+            <Link key={x.to} to={x.to}>
               <ListItem button={true} divider={true} style={{justifyContent: "center"}}>
                 <Typography
                   variant="caption"

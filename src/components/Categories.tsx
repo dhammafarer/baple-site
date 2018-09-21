@@ -14,7 +14,7 @@ interface Props {
   classes: any
 }
 
-const ProductCards: React.SFC<Props> = ({ categories, classes, lang }) => (
+const Categories: React.SFC<Props> = ({ categories, classes, lang }) => (
   <section className={classes.categories}>
     <Typography
       className={classes.title}
@@ -50,4 +50,25 @@ const ProductCards: React.SFC<Props> = ({ categories, classes, lang }) => (
   </section>
 );
 
-export default withStyles(styles)(ProductCards);
+export default withStyles(styles)(Categories);
+
+export const CategoriesFragment = graphql`
+  fragment CategoriesYaml on PagesYaml {
+    categories {
+      heading
+      items {
+        heading
+        img {
+          childImageSharp {
+            sizes(maxWidth: 200) {
+              src
+            }
+          }
+        }
+        link {
+          to
+        }
+      }
+    }
+  }
+`;

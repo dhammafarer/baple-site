@@ -6,30 +6,55 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
 interface Props {
-  lang: Lang
-  welcome: any
+  text: Array<string>
+  logo: {
+    childImageSharp: {
+      sizes: {
+        src: string
+      }
+    }
+  }
   classes: any
 }
 
-const DivisionWelcome: React.SFC<Props> = ({ welcome, classes, lang }) => (
-  <HalfPane reverse src={welcome.img.childImageSharp.sizes.src}>
-    <div className={classes.welcomeText}>
-      <img className={classes.welcomeLogo} src={welcome.logo.childImageSharp.sizes.src}/>
-      <Typography variant="display2"
-        className={classes.title}
+const Welcome: React.SFC<Props> = ({ text, logo, classes }) => (
+  <div className={classes.section}>
+    <img className={classes.logo} src={logo.childImageSharp.sizes.src}/>
+
+    <div className={classes.text}>
+      <Typography
+        variant="display1"
+        className={classes.english}
+        color="inherit"
         gutterBottom
       >
-        {welcome.title}
+        {text[0]}
       </Typography>
-      <Typography variant="subheading"
-        className={classes.subtitle}
+      <Typography
+        variant="headline"
+        color="inherit"
+        className={classes.spanish}
         gutterBottom
-        color="secondary"
       >
-        {welcome.subtitle}
+        {text[1]}
       </Typography>
     </div>
-  </HalfPane>
+  </div>
 );
 
-export default withStyles(styles)(DivisionWelcome);
+export default withStyles(styles)(Welcome);
+
+export const WelcomeFragment = graphql`
+  fragment WelcomeYaml on PagesYaml {
+    welcome {
+      text
+      logo {
+        childImageSharp {
+          sizes(maxWidth: 250) {
+            src
+          }
+        }
+      }
+    }
+  }
+`;
