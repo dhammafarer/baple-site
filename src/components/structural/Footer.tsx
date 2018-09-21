@@ -8,7 +8,7 @@ import TwitterIcon from 'mdi-material-ui/Twitter';
 import YoutubeIcon from 'mdi-material-ui/Youtube';
 
 import { withStyles } from "@material-ui/core/styles";
-import footerStyles from '../../styles/footer';
+import footerStyles from '../../styles/footer-styles';
 
 interface Props {
   classes: any

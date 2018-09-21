@@ -7,11 +7,11 @@ import Hidden from "@material-ui/core/Hidden";
 import Button from "@material-ui/core/Button";
 import MenuIcon from "@material-ui/icons/Menu";
 import Nav from './Nav';
-import { createStyles, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
+import styles from '../styles/headerBar-styles';
 import Link from 'gatsby-link';
 
 interface Props {
-  lang: Lang
   classes: any
   handleClose: any
   toggleMenu: any
@@ -22,26 +22,6 @@ interface Props {
     links: Array<any>
   },
 }
-
-const styles = createStyles({
-  bar: {
-    backgroundColor: 'white',
-  },
-  grow: {
-    flexGrow: 1
-  },
-  logo: {
-    marginTop: 5,
-    marginRight: 10,
-    width: 48,
-    height: 48,
-    alignSelf: 'center',
-  },
-  title: {
-    textTransform: 'uppercase'
-  },
-  lang: {}
-});
 
 const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav, title, logo }) => (
     <div>
@@ -59,7 +39,13 @@ const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, n
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Nav nav={nav} logo={logo} title={title} open={open} handleClose={handleClose}/>
+      <Nav
+        nav={nav}
+        logo={logo}
+        title={title}
+        open={open}
+        handleClose={handleClose}
+      />
     </div>
 );
 

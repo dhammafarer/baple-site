@@ -1,6 +1,6 @@
 import { createStyles } from "@material-ui/core/styles";
 
-const footeStyles = (theme:any) => createStyles({
+const footerStyles = (theme:any) => createStyles({
   layout: {
     paddingLeft: theme.spacing.unit * 3,
     paddingRight: theme.spacing.unit * 3,
@@ -40,4 +40,4 @@ const footeStyles = (theme:any) => createStyles({
   }
 });
 
-export default footeStyles;
+export default footerStyles;

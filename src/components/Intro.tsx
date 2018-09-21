@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { createStyles, withStyles } from "@material-ui/core/styles";
-import SplitImage from './SplitImage';
+import HalfPane from './HalfPane';
 import Typography from "@material-ui/core/Typography";
 
 const styles = (theme:any) => createStyles({
@@ -23,7 +23,7 @@ interface Props {
 }
 
 const ProductsIntro: React.SFC<Props> = ({ content, classes, lang }) => (
-  <SplitImage reverse img={content.img.childImageSharp.sizes.src}>
+  <HalfPane reverse src={content.img.childImageSharp.sizes.src}>
     <div className={classes.text}>
       <Typography variant="display2"
         className={classes.title}
@@ -39,7 +39,7 @@ const ProductsIntro: React.SFC<Props> = ({ content, classes, lang }) => (
         )
       }
     </div>
-  </SplitImage>
+  </HalfPane>
 );
 
 export default withStyles(styles)(ProductsIntro);

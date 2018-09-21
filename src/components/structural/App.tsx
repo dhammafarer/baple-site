@@ -4,8 +4,8 @@ import Head from '../Head';
 import Header from './Header';
 import Footer from './Footer';
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { withStyles, WithStyles } from "@material-ui/core/styles";
-import layoutStyles from '../../styles/layout';
+import { withStyles } from "@material-ui/core/styles";
+import styles from '../../styles/layout-styles';
 
 interface Props {
   lang: Lang
@@ -27,4 +27,4 @@ const App: React.SFC<Props> = ({ title, logo, children, nav, classes, lang }) =>
   </div>
 );
 
-export default withStyles(layoutStyles)(App);
+export default withStyles(styles)(App);

@@ -1,41 +1,12 @@
 import * as React from 'react';
-import { createStyles, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
+import styles from '../styles/categories-styles';
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import Link from './Link';
-
-const styles = (theme:any) => createStyles({
-  categories: {
-    padding: theme.spacing.unit * 3,
-    minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-  },
-  title: {
-    marginBottom: '0.6em',
-  },
-  card: {
-    display: 'flex',
-    height: '100%',
-  },
-  cardAction: {
-    width: '100%',
-  },
-  product: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  cardTitle: {
-    width: '100%',
-    textAlign: 'center',
-    padding: '1em',
-  }
-});
+import Link from 'gatsby-link';
 
 interface Props {
   lang: Lang

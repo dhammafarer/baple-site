@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { createStyles, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
+import styles from '../styles/products-styles';
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
@@ -10,31 +11,6 @@ import TableHead from "@material-ui/core/TableHead";
 import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
-
-const styles = (theme:any) => createStyles({
-  section: {
-    marginTop: theme.spacing.unit * 3,
-  },
-  text: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    maxWidth: 400,
-    margin: '0 auto',
-  },
-  card: {
-    marginTop: theme.spacing.unit * 3,
-  },
-  cardHeader: {
-    backgroundColor: theme.palette.grey[200]
-  },
-  cardContent: {
-    padding: theme.spacing.unit * 3
-  }
-});
 
 interface Props {
   lang: Lang
