@@ -8,37 +8,49 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import Link from 'gatsby-link';
 
-interface Props {
-  lang: Lang
-  categories: any
-  classes: any
+interface Item {
+  heading: string
+  img: {
+    childImageSharp: {
+      sizes: {
+        src: string
+      }
+    }
+  }
+  link: {
+    to: string
+  }
 }
 
-const Categories: React.SFC<Props> = ({ categories, classes, lang }) => (
+interface Props {
+  classes: any
+  heading: any
+  items: Array<Item>
+}
+
+const Categories: React.SFC<Props> = ({ classes, heading, items }) => (
   <section className={classes.categories}>
     <Typography
-      className={classes.title}
+      className={classes.heading}
       variant="display1"
-      gutterBottom
       align="center"
       color="primary"
     >
-      {categories.title}
+      {heading}
     </Typography>
-    <Grid container spacing={16}>
-      {categories.items.map((x:any) =>
-        <Grid key={x.title}item xs={12} md={4} xl={2}>
+    <Grid container spacing={32}>
+      {items.map(x =>
+        <Grid key={x.heading}item xs={12} sm={6} md={4} xl={2}>
           <Card className={classes.card}>
             <CardActionArea className={classes.cardAction}>
-              <Link to={x.to} lang={lang}>
-                <CardContent className={classes.product}>
-                  <img src={x.img.childImageSharp.sizes.src}/>
+              <Link to={x.link.to}>
+                <CardContent className={classes.content}>
+                  <img className={classes.img} src={x.img.childImageSharp.sizes.src}/>
                   <Typography
-                    variant="subheading"
-                    color="textSecondary"
-                    className={classes.cardTitle}
+                    color="inherit"
+                    className={classes.label}
                   >
-                    {x.title}
+                    {x.heading}
                   </Typography>
                 </CardContent>
               </Link>

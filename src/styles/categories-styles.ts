@@ -2,14 +2,14 @@ import { createStyles, Theme } from "@material-ui/core/styles";
 
 const categoriesStyles = (theme:Theme) => createStyles({
   categories: {
-    padding: theme.spacing.unit * 3,
-    minHeight: '100vh',
+    paddingTop: '6em',
+    paddingBottom: '6em',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
   },
-  title: {
-    marginBottom: '0.6em',
+  heading: {
+    marginBottom: '1.2em',
   },
   card: {
     display: 'flex',
@@ -18,15 +18,28 @@ const categoriesStyles = (theme:Theme) => createStyles({
   cardAction: {
     width: '100%',
   },
-  product: {
+  content: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    padding: theme.spacing.unit * 3,
+    [theme.breakpoints.up('sm')]: {
+      flexDirection: 'column'
+    }
   },
-  cardTitle: {
+  img: {
+    width: 150,
+    height: 'auto',
+  },
+  label: {
     width: '100%',
     textAlign: 'center',
-    padding: '1em',
+    fontSize: '1.4em',
+    fontWeight: 700,
+    color: theme.palette.grey[700],
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '1em'
+    }
   }
 });
 

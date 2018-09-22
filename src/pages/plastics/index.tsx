@@ -4,7 +4,10 @@ import Welcome from '../../components/Welcome';
 
 interface Props {
   data: {
-    pagesYaml: any
+    pagesYaml: {
+      welcome: any
+      categories: any
+    }
   }
 }
 
@@ -15,6 +18,7 @@ class PlasticsIndexPage extends React.Component<Props, {}> {
     return (
       <div>
         <Welcome {...p.welcome}/>
+        <Categories {...p.categories}/>
       </div>
     );
   }
