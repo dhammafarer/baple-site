@@ -1,0 +1,1484 @@
+<!DOCTYPE html><html lang="es"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/baple-site/component---src-layouts-plastics-tsx-f83817fa9baaf2dd9789.js" as="script"/><link rel="preload" href="/baple-site/component---src-pages-plastics-pulverizadores-tsx-3fa12525123d55b97be1.js" as="script"/><link rel="preload" href="/baple-site/path---plastics-pulverizadores-a067813d22b471b7e302.js" as="script"/><link rel="preload" href="/baple-site/app-1288033ec49ac7c418b6.js" as="script"/><link rel="preload" href="/baple-site/commons-7d2663e87b54fd08ba52.js" as="script"/><style type="text/css" id="server-side-jss">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+.jss16 {
+  background-color: #fff;
+}
+.jss17 {
+  border-radius: 4px;
+}
+.jss18 {
+  box-shadow: none;
+}
+.jss19 {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.jss20 {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+.jss21 {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2),0px 3px 4px 0px rgba(0, 0, 0, 0.14),0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+}
+.jss22 {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.jss23 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 5px 8px 0px rgba(0, 0, 0, 0.14),0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+.jss24 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.jss25 {
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),0px 7px 10px 1px rgba(0, 0, 0, 0.14),0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+}
+.jss26 {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.jss27 {
+  box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),0px 9px 12px 1px rgba(0, 0, 0, 0.14),0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+}
+.jss28 {
+  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),0px 10px 14px 1px rgba(0, 0, 0, 0.14),0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+}
+.jss29 {
+  box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),0px 11px 15px 1px rgba(0, 0, 0, 0.14),0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+}
+.jss30 {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.jss31 {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 13px 19px 2px rgba(0, 0, 0, 0.14),0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+}
+.jss32 {
+  box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2),0px 14px 21px 2px rgba(0, 0, 0, 0.14),0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+}
+.jss33 {
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2),0px 15px 22px 2px rgba(0, 0, 0, 0.14),0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+}
+.jss34 {
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),0px 16px 24px 2px rgba(0, 0, 0, 0.14),0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+.jss35 {
+  box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2),0px 17px 26px 2px rgba(0, 0, 0, 0.14),0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+}
+.jss36 {
+  box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2),0px 18px 28px 2px rgba(0, 0, 0, 0.14),0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+}
+.jss37 {
+  box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2),0px 19px 29px 2px rgba(0, 0, 0, 0.14),0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+}
+.jss38 {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 20px 31px 3px rgba(0, 0, 0, 0.14),0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+}
+.jss39 {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 21px 33px 3px rgba(0, 0, 0, 0.14),0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+}
+.jss40 {
+  box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2),0px 22px 35px 3px rgba(0, 0, 0, 0.14),0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+}
+.jss41 {
+  box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2),0px 23px 36px 3px rgba(0, 0, 0, 0.14),0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+}
+.jss42 {
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+.jss7 {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.jss8 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+.jss9 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.jss10 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
+.jss11 {
+  position: static;
+}
+.jss12 {
+  position: relative;
+}
+.jss13 {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.jss14 {
+  color: #fff;
+  background-color: #336699;
+}
+.jss15 {
+  color: #fff;
+  background-color: #757475;
+}
+.jss65 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.jss66 {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+}
+.jss67 {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.jss68 {
+  animation-duration: 200ms;
+}
+.jss69 {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.jss70 {
+  opacity: 0;
+  animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.jss71 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@keyframes mui-ripple-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@keyframes mui-ripple-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mui-ripple-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.jss53 {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  outline: none;
+  position: relative;
+  user-select: none;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.jss53::-moz-focus-inner {
+  border-style: none;
+}
+.jss53.jss54 {
+  cursor: default;
+  pointer-events: none;
+}
+.jss47 {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.jss47:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss47.jss51 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss47:hover {
+    background-color: transparent;
+  }
+}
+.jss47:hover.jss51 {
+  background-color: transparent;
+}
+.jss48 {
+  color: inherit;
+}
+.jss49 {
+  color: #336699;
+}
+.jss49:hover {
+  background-color: rgba(51, 102, 153, 0.08);
+}
+@media (hover: none) {
+  .jss49:hover {
+    background-color: transparent;
+  }
+}
+.jss50 {
+  color: #757475;
+}
+.jss50:hover {
+  background-color: rgba(117, 116, 117, 0.08);
+}
+@media (hover: none) {
+  .jss50:hover {
+    background-color: transparent;
+  }
+}
+.jss52 {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.jss43 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.jss44 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .jss44 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.jss45 {
+  min-height: 56px;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .jss45 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .jss45 {
+    min-height: 64px;
+  }
+}
+.jss46 {
+  min-height: 48px;
+}
+.jss201 {
+  margin: 0;
+  display: block;
+}
+.jss202 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.04em;
+  letter-spacing: -.04em;
+}
+.jss203 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.02em;
+  letter-spacing: -.02em;
+}
+.jss204 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.13333em;
+  margin-left: -.02em;
+}
+.jss205 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.20588em;
+}
+.jss206 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.35417em;
+}
+.jss207 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.16667em;
+}
+.jss208 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.5em;
+}
+.jss209 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.71429em;
+}
+.jss210 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.46429em;
+}
+.jss211 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Open Sans,sans-serif;
+  line-height: 1.375em;
+}
+.jss212 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: Open Sans,sans-serif;
+  text-transform: uppercase;
+}
+.jss213 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+.jss214 {
+  text-align: left;
+}
+.jss215 {
+  text-align: center;
+}
+.jss216 {
+  text-align: right;
+}
+.jss217 {
+  text-align: justify;
+}
+.jss218 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jss219 {
+  margin-bottom: 0.35em;
+}
+.jss220 {
+  margin-bottom: 16px;
+}
+.jss221 {
+  color: inherit;
+}
+.jss222 {
+  color: #336699;
+}
+.jss223 {
+  color: #757475;
+}
+.jss224 {
+  color: rgba(0, 0, 0, 0.87);
+}
+.jss225 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss226 {
+  color: #f44336;
+}
+.jss56 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.jss57 {
+  color: #336699;
+}
+.jss58 {
+  color: #757475;
+}
+.jss59 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss60 {
+  color: #f44336;
+}
+.jss61 {
+  color: rgba(0, 0, 0, 0.26);
+}
+.jss62 {
+  font-size: inherit;
+}
+.jss63 {
+  font-size: 20px;
+}
+.jss64 {
+  font-size: 36px;
+}
+.jss92 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1300;
+  position: fixed;
+}
+.jss93 {
+  visibility: hidden;
+}
+.jss81 {
+  flex: 0 0 auto;
+}
+.jss82 {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  z-index: 1200;
+  outline: none;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+.jss83 {
+  left: 0;
+  right: auto;
+}
+.jss84 {
+  left: auto;
+  right: 0;
+}
+.jss85 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: auto;
+  max-height: 100%;
+}
+.jss86 {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+}
+.jss87 {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.jss88 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.jss89 {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.jss90 {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.jss72 {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  margin-top: 1.5em;
+  align-items: center;
+  padding-top: 1em;
+  flex-direction: column;
+}
+.jss73 {
+  top: 4px;
+  right: 4px;
+  position: absolute;
+  align-self: flex-end;
+}
+.jss74 {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+}
+.jss75 {
+  color: #336699;
+  margin: 0.4em 0;
+  text-transform: uppercase;
+}
+.jss76 {
+  width: 100%;
+  flex-grow: 1;
+}
+.jss77 {
+  color: #616161;
+  font-size: 1em;
+}
+.jss78 {
+  width: 100%;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  background: #336699;
+  flex-shrink: 0;
+  align-items: center;
+  flex-direction: column;
+}
+.jss79 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.jss79:last-child {
+  margin-top: 0.4em;
+}
+.jss80 {
+  margin-right: 0.4em;
+}
+.jss3 {
+  height: 64px;
+  background-color: white;
+}
+.jss4 {
+  flex-grow: 1;
+}
+.jss5 {
+  width: 48px;
+  height: 48px;
+  margin-top: 5px;
+  align-self: center;
+  margin-right: 10px;
+}
+.jss6 {
+  text-transform: uppercase;
+}
+.jss281 {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+.jss282 {
+  margin-top: 24px;
+}
+.jss283 {
+  text-align: center;
+  background-color: rgb(91, 132, 173);
+}
+.jss284 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(81, 81, 81);
+}
+.jss285 {
+  text-align: center;
+  background-color: rgb(35, 71, 107);
+}
+.jss286 {
+  color: #fff;
+}
+.jss287 {
+  width: 150px;
+  height: 150px;
+}
+.jss288 {
+  color: #ccc;
+  border-left: 1px solid gray;
+  border-color: rgb(144, 143, 144);
+  padding-left: 25px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.jss1 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.jss2 {
+  flex: 1;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1600px;
+  padding-top: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  flex-direction: column;
+}
+.jss104 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.jss105 {
+  margin: 0;
+  box-sizing: border-box;
+}
+.jss106 {
+  min-width: 0;
+}
+.jss107 {
+  flex-direction: column;
+}
+.jss108 {
+  flex-direction: column-reverse;
+}
+.jss109 {
+  flex-direction: row-reverse;
+}
+.jss110 {
+  flex-wrap: nowrap;
+}
+.jss111 {
+  flex-wrap: wrap-reverse;
+}
+.jss112 {
+  align-items: center;
+}
+.jss113 {
+  align-items: flex-start;
+}
+.jss114 {
+  align-items: flex-end;
+}
+.jss115 {
+  align-items: baseline;
+}
+.jss116 {
+  align-content: center;
+}
+.jss117 {
+  align-content: flex-start;
+}
+.jss118 {
+  align-content: flex-end;
+}
+.jss119 {
+  align-content: space-between;
+}
+.jss120 {
+  align-content: space-around;
+}
+.jss121 {
+  justify-content: center;
+}
+.jss122 {
+  justify-content: flex-end;
+}
+.jss123 {
+  justify-content: space-between;
+}
+.jss124 {
+  justify-content: space-around;
+}
+.jss125 {
+  justify-content: space-evenly;
+}
+.jss126 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.jss126 > .jss105 {
+  padding: 4px;
+}
+.jss127 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.jss127 > .jss105 {
+  padding: 8px;
+}
+.jss128 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.jss128 > .jss105 {
+  padding: 12px;
+}
+.jss129 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.jss129 > .jss105 {
+  padding: 16px;
+}
+.jss130 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.jss130 > .jss105 {
+  padding: 20px;
+}
+.jss131 {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
+.jss132 {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.jss133 {
+  flex-grow: 0;
+  max-width: 8.33333%;
+  flex-basis: 8.33333%;
+}
+.jss134 {
+  flex-grow: 0;
+  max-width: 16.66667%;
+  flex-basis: 16.66667%;
+}
+.jss135 {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.jss136 {
+  flex-grow: 0;
+  max-width: 33.33333%;
+  flex-basis: 33.33333%;
+}
+.jss137 {
+  flex-grow: 0;
+  max-width: 41.66667%;
+  flex-basis: 41.66667%;
+}
+.jss138 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.jss139 {
+  flex-grow: 0;
+  max-width: 58.33333%;
+  flex-basis: 58.33333%;
+}
+.jss140 {
+  flex-grow: 0;
+  max-width: 66.66667%;
+  flex-basis: 66.66667%;
+}
+.jss141 {
+  flex-grow: 0;
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.jss142 {
+  flex-grow: 0;
+  max-width: 83.33333%;
+  flex-basis: 83.33333%;
+}
+.jss143 {
+  flex-grow: 0;
+  max-width: 91.66667%;
+  flex-basis: 91.66667%;
+}
+.jss144 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .jss145 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss146 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss147 {
+    flex-grow: 0;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss148 {
+    flex-grow: 0;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss149 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss150 {
+    flex-grow: 0;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss151 {
+    flex-grow: 0;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss152 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss153 {
+    flex-grow: 0;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss154 {
+    flex-grow: 0;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss155 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss156 {
+    flex-grow: 0;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss157 {
+    flex-grow: 0;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss158 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .jss159 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss160 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss161 {
+    flex-grow: 0;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss162 {
+    flex-grow: 0;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss163 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss164 {
+    flex-grow: 0;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss165 {
+    flex-grow: 0;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss166 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss167 {
+    flex-grow: 0;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss168 {
+    flex-grow: 0;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss169 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss170 {
+    flex-grow: 0;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss171 {
+    flex-grow: 0;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss172 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .jss173 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss174 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss175 {
+    flex-grow: 0;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss176 {
+    flex-grow: 0;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss177 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss178 {
+    flex-grow: 0;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss179 {
+    flex-grow: 0;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss180 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss181 {
+    flex-grow: 0;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss182 {
+    flex-grow: 0;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss183 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss184 {
+    flex-grow: 0;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss185 {
+    flex-grow: 0;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss186 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .jss187 {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .jss188 {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .jss189 {
+    flex-grow: 0;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
+  }
+  .jss190 {
+    flex-grow: 0;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
+  }
+  .jss191 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .jss192 {
+    flex-grow: 0;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+  .jss193 {
+    flex-grow: 0;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
+  }
+  .jss194 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .jss195 {
+    flex-grow: 0;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
+  }
+  .jss196 {
+    flex-grow: 0;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
+  }
+  .jss197 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .jss198 {
+    flex-grow: 0;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
+  }
+  .jss199 {
+    flex-grow: 0;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
+  }
+  .jss200 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+.jss263 {
+  overflow: hidden;
+}
+.jss264 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+.jss264:last-child {
+  padding-bottom: 24px;
+}
+@media (min-width:600px) {
+  .jss264 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.jss100 {
+  height: 100%;
+}
+.jss101 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.jss102 {
+  width: 100%;
+  height: 100%;
+}
+.jss103 {
+  width: 100%;
+  height: auto;
+}
+.jss227 {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  min-height: 36px;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  font-family: Open Sans,sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.jss227:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss227.jss247 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss227:hover {
+    background-color: transparent;
+  }
+}
+.jss227:hover.jss247 {
+  background-color: transparent;
+}
+.jss228 {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.jss230 {
+  color: #336699;
+}
+.jss230:hover {
+  background-color: rgba(51, 102, 153, 0.08);
+}
+@media (hover: none) {
+  .jss230:hover {
+    background-color: transparent;
+  }
+}
+.jss231 {
+  color: #757475;
+}
+.jss231:hover {
+  background-color: rgba(117, 116, 117, 0.08);
+}
+@media (hover: none) {
+  .jss231:hover {
+    background-color: transparent;
+  }
+}
+.jss235 {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+}
+.jss236 {
+  border: 1px solid rgba(51, 102, 153, 0.5);
+}
+.jss236:hover {
+  border: 1px solid #336699;
+}
+.jss237 {
+  border: 1px solid rgba(117, 116, 117, 0.5);
+}
+.jss237:hover {
+  border: 1px solid #757475;
+}
+.jss238 {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+}
+.jss238.jss246 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.jss238:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.jss238.jss247 {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss238:hover {
+  background-color: #d5d5d5;
+}
+@media (hover: none) {
+  .jss238:hover {
+    background-color: #e0e0e0;
+  }
+}
+.jss238:hover.jss247 {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss239 {
+  color: #fff;
+  background-color: #336699;
+}
+.jss239:hover {
+  background-color: rgb(35, 71, 107);
+}
+@media (hover: none) {
+  .jss239:hover {
+    background-color: #336699;
+  }
+}
+.jss240 {
+  color: #fff;
+  background-color: #757475;
+}
+.jss240:hover {
+  background-color: rgb(81, 81, 81);
+}
+@media (hover: none) {
+  .jss240:hover {
+    background-color: #757475;
+  }
+}
+.jss244 {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.jss244:active {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.jss245 {
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  min-width: 48px;
+  border-radius: 24px;
+}
+.jss248 {
+  color: inherit;
+}
+.jss249 {
+  width: 40px;
+  height: 40px;
+}
+.jss250 {
+  padding: 7px 8px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+  min-height: 32px;
+}
+.jss251 {
+  padding: 8px 24px;
+  min-width: 112px;
+  font-size: 0.9375rem;
+  min-height: 40px;
+}
+.jss252 {
+  width: 100%;
+}
+.jss94 {
+  padding: 9em 3em;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  flex-direction: column;
+}
+.jss95 {
+  color: #616161;
+}
+.jss96 {
+  margin: 2em 0;
+}
+.jss97 {
+  font-size: 1em;
+  line-spacing: 1.6;
+}
+.jss98 {
+  color: #fff;
+  background: #336699;
+}
+.jss265 {
+  width: 100%;
+  display: table;
+  font-family: Open Sans,sans-serif;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.jss266 {
+  display: table-header-group;
+}
+.jss280 {
+  display: table-row-group;
+}
+.jss267 {
+  color: inherit;
+  height: 48px;
+  display: table-row;
+  outline: none;
+  vertical-align: middle;
+}
+.jss267.jss268 {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.jss267.jss269:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.jss270 {
+  height: 56px;
+}
+.jss271 {
+  height: 56px;
+}
+.jss272 {
+  display: table-cell;
+  padding: 4px 56px 4px 24px;
+  text-align: left;
+  border-bottom: 1px solid
+    rgba(224, 224, 224, 1);
+  vertical-align: inherit;
+}
+.jss272:last-child {
+  padding-right: 24px;
+}
+.jss273 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.jss274 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.jss275 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  border-bottom: 0;
+}
+.jss276 {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.jss277 {
+  padding-right: 24px;
+}
+.jss278 {
+  padding: 0 12px;
+}
+.jss278:last-child {
+  padding-right: 12px;
+}
+.jss279 {
+  padding: 0;
+}
+.jss279:last-child {
+  padding: 0;
+}
+.jss253 {
+  margin-top: 3em;
+}
+.jss254 {
+  margin: 1em 0;
+}
+.jss255 {
+  height: 100%;
+}
+.jss256 {
+  width: 100%;
+  heigh: auto;
+}
+.jss257 {
+  margin: 2em 0;
+  text-align: center;
+}
+.jss258 {
+  color: #212121;
+  font-size: 2em;
+}
+.jss259 {
+  padding: 24px;
+}
+.jss260 {
+  margin-top: 2em;
+}
+.jss261 {
+  margin-top: 1em;
+}
+.jss262 {
+  color: #616161;
+  font-weight: 700;
+}</style><title data-react-helmet="true">Baple Plastics</title><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"/><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville+Cursive:400"/><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/><meta data-react-helmet="true" name="description" content="Baple Group"/><style id="gatsby-inlined-css"></style></head><body><div id="___gatsby"><div class="jss1"><div><header class="jss16 jss22 jss7 jss8 jss14 mui-fixed jss3"><div class="jss43 jss45 jss44"><img class="jss5" src="/baple-site/static/baple-group-logo-no-text-853fbf2b0872ef3fda6f2ee3f6f986b3-b90e6.png"/><div class="jss4"></div><button tabindex="0" class="jss53 jss47 jss49" type="button"><span class="jss52"><svg class="jss56" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span><span class="jss65"></span></button></div></header></div><main class="jss2"><div><section class="jss99"><div class="jss104 jss100" style="flex-direction:row-reverse"><div class="jss105 jss144 jss166"><div class="jss102"><div class="jss94"><h1 class="jss201 jss204 jss95">Pulverizadores</h1><div class="jss96"><p class="jss201 jss210 jss97">Baple dispone de la gran mayoría de soluciones demandadas por la industria. Adicionalmente, la incorporación de nuevas y modernas soluciones forma parte del trabajo rutinario para ofrecer siempre soluciones de valor añadido a nuestros partners.</p></div><a href="/baple-site/plastics/contact"><button tabindex="0" class="jss53 jss227 jss238 jss241 jss98" type="button"><span class="jss228">Contact</span><span class="jss65"></span></button></a></div></div></div></div></section><section class="jss253"><div class="jss104 jss129"><div class="jss105 jss144 jss166"><div class="jss16 jss19 jss17 jss263 jss255"><div class="jss264 jss259"><img class="jss256" src="/baple-site/static/Product_pulverizador_0919-d64c151e5505e7b7ce7b79c3c26b765d-381d6.jpg"/><div class="jss257"><h2 class="jss201 jss207 jss258">Pulverizadores</h2><div class="jss254"><aside class="jss201 jss209">¿Interesado en Pulverizadores?</aside><aside class="jss201 jss209">Por favor, contáctenos para poder ofrecerle un servicio personalizado, asesoramiento y catálogo completo.</aside></div><a href="/baple-site/plastics/contact"><button tabindex="0" class="jss53 jss227 jss229 jss230 jss235 jss236" type="button"><span class="jss228">Contacta con nosotros!</span><span class="jss65"></span></button></a></div><div class="jss260"><h3 class="jss201 jss208">Especificaciones Generales</h3><table class="jss265 jss261"><thead class="jss266"><tr class="jss267 jss270"><th class="jss272 jss273" scope="col">Parameter</th><th class="jss272 jss273" scope="col">Value</th></tr></thead><tbody class="jss280"><tr class="jss267"><td class="jss272 jss274 jss262">Formatos</td><td class="jss272 jss274">28/400; 28/410; 28/415</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Ratio Descarga</td><td class="jss272 jss274">1.4 ± 0.1 ml/T</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Diseño</td><td class="jss272 jss274">Rango completo de diseños</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Color</td><td class="jss272 jss274">Rango completo de colores y combinaciones</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Nozzle</td><td class="jss272 jss274">Spray/Stream, Spray/Spray, Foam, Plastic mesh/Foam</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Gatillo</td><td class="jss272 jss274">7 diferentes modelos de gatillo</td></tr></tbody></table></div></div></div></div><div class="jss105 jss144 jss166"><div class="jss16 jss19 jss17 jss263 jss255"><div class="jss264 jss259"><img class="jss256" src="/baple-site/static/Product_Pulver2-fc607770afb4f3e6186c8be68c12a9b8-381d6.jpg"/><div class="jss257"><h2 class="jss201 jss207 jss258">Mini pulverizadores</h2><div class="jss254"><aside class="jss201 jss209">¿Interesado en Pulverizadores?</aside><aside class="jss201 jss209">Por favor, contáctenos para poder ofrecerle un servicio personalizado, asesoramiento y catálogo completo.</aside></div><a href="/baple-site/plastics/contact"><button tabindex="0" class="jss53 jss227 jss229 jss230 jss235 jss236" type="button"><span class="jss228">Contacta con nosotros!</span><span class="jss65"></span></button></a></div><div class="jss260"><h3 class="jss201 jss208">Especificaciones Generales</h3><table class="jss265 jss261"><thead class="jss266"><tr class="jss267 jss270"><th class="jss272 jss273" scope="col">Parameter</th><th class="jss272 jss273" scope="col">Value</th></tr></thead><tbody class="jss280"><tr class="jss267"><td class="jss272 jss274 jss262">Formatos</td><td class="jss272 jss274">24/410; 28/400; 28/410; 43/400</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Ratio Descarga</td><td class="jss272 jss274">1.0 ± 0.1 ml/T</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Diseño</td><td class="jss272 jss274">Rango completo de diseños</td></tr><tr class="jss267"><td class="jss272 jss274 jss262">Color</td><td class="jss272 jss274">Rango completo de colores y combinaciones</td></tr></tbody></table></div></div></div></div></div></section></div></main><footer class="jss282"><div class="jss284 jss281"><img class="jss287" src="/baple-site/static/baple-group-logo-no-text-853fbf2b0872ef3fda6f2ee3f6f986b3-b90e6.png"/><div class="jss288"><h2 class="jss201 jss207 jss221 jss219">Baple Plastics</h2><span class="jss201 jss211 jss221">info@baple.com</span><span class="jss201 jss211 jss221">+886-2-2345-2354</span></div></div><div class="jss283 jss281"><button tabindex="0" class="jss53 jss47" type="button"><span class="jss52"><svg class="jss56" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6C10,3.79 11.79,2 14,2H17Z"></path></svg></span><span class="jss65"></span></button><button tabindex="0" class="jss53 jss47" type="button"><span class="jss52"><svg class="jss56" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></span><span class="jss65"></span></button><button tabindex="0" class="jss53 jss47" type="button"><span class="jss52"><svg class="jss56" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2C22,19.4 19.4,22 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8C2,4.6 4.6,2 7.8,2M7.6,4C5.61,4 4,5.61 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4C18.39,20 20,18.39 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5C17.94,5.5 18.5,6.06 18.5,6.75C18.5,7.44 17.94,8 17.25,8C16.56,8 16,7.44 16,6.75C16,6.06 16.56,5.5 17.25,5.5M12,7C14.76,7 17,9.24 17,12C17,14.76 14.76,17 12,17C9.24,17 7,14.76 7,12C7,9.24 9.24,7 12,7M12,9C10.34,9 9,10.34 9,12C9,13.66 10.34,15 12,15C13.66,15 15,13.66 15,12C15,10.34 13.66,9 12,9Z"></path></svg></span><span class="jss65"></span></button><button tabindex="0" class="jss53 jss47" type="button"><span class="jss52"><svg class="jss56" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"></path></svg></span><span class="jss65"></span></button></div><div class="jss285 jss281"><span class="jss201 jss211 jss223">© 2018 Copyright: <span class="jss286">Baple Group</span></span></div></footer></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-1288033ec49ac7c418b6.js","178469467687848":"component---src-pages-404-tsx-c3f1179ef31e3033d235.js","221374088121123":"component---src-pages-index-tsx-5db7b08ee744495b98bf.js","101154621899696":"component---src-pages-plastics-about-tsx-72f3cb1da7b50e233c66.js","109785385767639":"component---src-pages-plastics-bombas-de-locion-tsx-96699ce3674119fc4853.js","16000426481265":"component---src-pages-plastics-botellas-tsx-b2151c51ab1c411838d3.js","89525602275788":"component---src-pages-plastics-contact-tsx-44317f3baf0a6ecadef0.js","237464754538944":"component---src-pages-plastics-index-tsx-f9cdfaf6e61130c0bdcf.js","148646527043959":"component---src-pages-plastics-micropulverizadores-tsx-9bd1fdfbad927d3fe0da.js","63068060951635":"component---src-pages-plastics-pulverizadores-tsx-3fa12525123d55b97be1.js","5347095006644":"component---src-pages-plastics-tapones-tsx-26081b4693a0721a20a3.js","60335399758886":"path----ba7c8845f3bfc23426f0.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-a6e34261d6390f9fb999.js","118116234926613":"path---plastics-about-68e447d4de732e8a522b.js","230699102907797":"path---plastics-bombas-de-locion-8f14c1501aa3c1888931.js","226141537907558":"path---plastics-botellas-7d7b59d57b599e304edf.js","163952591659084":"path---plastics-contact-07496ed1fb8637982cea.js","5274467131083":"path---plastics-e832cbcdf6fdc4a11d45.js","51864980220509":"path---plastics-micropulverizadores-fdaf68589a897b79ba75.js","205910509194557":"path---plastics-pulverizadores-a067813d22b471b7e302.js","278767720713970":"path---plastics-tapones-6a8741ae7aeefbe5231e.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","22676092666560":"component---src-layouts-index-tsx-3a90a8593982f97253d0.js","192143353320670":"component---src-layouts-plastics-tsx-f83817fa9baaf2dd9789.js"}/*]]>*/</script><script>/*<![CDATA[*/["/baple-site/commons-7d2663e87b54fd08ba52.js","/baple-site/app-1288033ec49ac7c418b6.js","/baple-site/path---plastics-pulverizadores-a067813d22b471b7e302.js","/baple-site/component---src-pages-plastics-pulverizadores-tsx-3fa12525123d55b97be1.js","/baple-site/component---src-layouts-plastics-tsx-f83817fa9baaf2dd9789.js"].forEach(function(s){document.write('<script src="'+s+'" defer></'+'script>')})/*]]>*/</script></body></html>

@@ -1,0 +1,2 @@
+webpackJsonp([0x951d2ffc604c],{510:function(a,e){a.exports={data:{pagesYaml:{contact:{heading:"Contact Us!",logo:{childImageSharp:{sizes:{src:"/baple-site/static/baple-plastics-logo-52e8dfb0d1b082b8e3bad4f03eb6c913-b90e6.png"}}},mainImg:{childImageSharp:{sizes:{src:"/baple-site/static/learn-more-0b92bfcd5d92bad6948766f1c176a052-9fbf0.jpg"}}},details:{telephone:"+886-2-2345-2384",email:"info@baple.es",address:["5F, No. 35, Daye Rd","Beitou District, Taipei","Taiwan"]}}}},pathContext:{}}}});
+//# sourceMappingURL=path---plastics-contact-07496ed1fb8637982cea.js.map
