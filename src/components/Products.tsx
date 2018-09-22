@@ -47,7 +47,7 @@ const ProductsList: React.SFC<Props> = ({ products, classes }) => (
     <Grid container spacing={32}>
       {
         products.map(x =>
-        <Grid item xs={12} md={6}>
+        <Grid key={x.heading} item xs={12} md={6}>
           <Card key={x.heading} className={classes.card}>
             <CardContent className={classes.cardContent}>
               <img className={classes.media} src={x.mainImg.childImageSharp.sizes.src}/>
@@ -88,6 +88,7 @@ const ProductsList: React.SFC<Props> = ({ products, classes }) => (
                           </TableCell>
                         </TableRow>
                       </TableHead>
+                      <TableBody>
                         {
                           s.params.map((c, k) =>
                             <TableRow key={k}>
@@ -100,7 +101,6 @@ const ProductsList: React.SFC<Props> = ({ products, classes }) => (
                             </TableRow>
                           )
                         }
-                      <TableBody>
                       </TableBody>
                     </Table>
                   </div>

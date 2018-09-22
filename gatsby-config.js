@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/baple-site',
   siteMetadata: {
     title: 'Baple Group'
   },
