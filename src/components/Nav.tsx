@@ -3,6 +3,7 @@ import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
@@ -31,23 +32,25 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) 
       role="button"
       onClick={handleClose}
       onKeyDown={handleClose}
-      className={classes.list}
+      className={classes.nav}
     >
       <IconButton className={classes.close}>
         <CloseIcon color="secondary"/>
       </IconButton>
-      <List>
-        <img className={classes.logo} src={logo}/>
-        <Typography variant="title" gutterBottom={true}>{title}</Typography>
+      <img className={classes.logo} src={logo}/>
+      <Typography variant="title" className={classes.title}>
+        {title}
+      </Typography>
+      <List className={classes.list}>
+        <Divider/>
         {
           nav.links.map((x:any) =>
             <Link key={x.to} to={x.to}>
-              <ListItem button={true} divider={true} style={{justifyContent: "center"}}>
+              <ListItem button divider style={{justifyContent: "center"}}>
                 <Typography
                   variant="caption"
-                  className={classes.item}
-                  color="secondary"
-                  align="center"
+                  className={classes.link}
+                  color="inherit"
                 >
                   {x.label}
                 </Typography>
@@ -77,10 +80,12 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) 
 export default withStyles(styles)(Nav);
 
 export const NavFragment = graphql`
-  fragment NavPagesYaml on PagesYaml {
-    links {
-      to
-      label
+  fragment NavYaml on PagesYaml {
+    nav {
+      links {
+        to
+        label
+      }
     }
   }
 `;

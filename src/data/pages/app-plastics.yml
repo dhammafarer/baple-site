@@ -1,0 +1,11 @@
+title: Baple Plastics
+lang: es
+logo: './img/logos/baple-group-logo-no-text.png'
+nav:
+  links:
+    - to: /plastics/pulverizadores
+      label: Pulverizadores
+    - to: /plastics/bombas-de-locion
+      label: Bombas de locion
+    - to: /
+      label: Baple Group

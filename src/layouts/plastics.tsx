@@ -9,13 +9,7 @@ interface Props {
     pathname: string
   }
   data: {
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
-    logo: any
-    nav: any
+    app: any
   }
 }
 
@@ -23,12 +17,7 @@ class PlasticsLayout extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
     return (
-      <App
-        lang={'es'}
-        title={data.site.siteMetadata.title}
-        logo={data.logo.sizes.src}
-        nav={data.nav}
-      >
+      <App {...data.app}>
         {children()}
       </App>
     );
@@ -39,18 +28,8 @@ export default withRoot(PlasticsLayout);
 
 export const query = graphql`
   query PlasticsQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    logo: imageSharp(id: {regex: "/LOGO_Baple_Plastics.png/"}) {
-      sizes(maxWidth: 120) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    nav: pagesYaml(id: {regex: "/nav-plastics.yml/"}) {
-     ...NavPagesYaml
+    app: pagesYaml(id: {regex: "/app-plastics.yml/"}) {
+     ...AppYaml
     }
   }
 `;

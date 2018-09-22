@@ -1,6 +1,12 @@
 import { createStyles, Theme } from "@material-ui/core/styles";
 
 const layoutStyles = (theme:Theme) => createStyles({
+  '@global': {
+    a: {
+      textDecoration: 'none',
+      color: 'inherit',
+    }
+  },
   layout: {
     display: 'flex',
     flexDirection: 'column',

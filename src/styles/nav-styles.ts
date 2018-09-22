@@ -1,18 +1,15 @@
 import { createStyles, Theme } from "@material-ui/core/styles";
 
 const navStyles = (theme:Theme) => createStyles({
- list: {
+ nav: {
     height: '100%',
     width: 300,
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
     marginTop: '1.5em',
-    justifyContent: 'space-between',
-  },
-  logo: {
-    width: 150,
-    marginBottom: 20,
+    alignItems: 'center',
+    paddingTop: '2em',
   },
   close: {
     alignSelf: 'flex-end',
@@ -20,22 +17,43 @@ const navStyles = (theme:Theme) => createStyles({
     top: 4,
     right: 4,
   },
+  logo: {
+    width: 130,
+    height: 130,
+    marginBottom: 20,
+  },
+  title: {
+    textTransform: 'uppercase',
+    color: theme.palette.primary.main,
+    margin: '0.4em 0',
+  },
+  list: {
+    flexGrow: 1,
+    width: '100%',
+  },
+  link: {
+    color: theme.palette.grey[700],
+    fontSize: '1em',
+  },
   contact: {
-    paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2,
-    alignSelf: 'center',
+    flexShrink: 0,
+    padding: theme.spacing.unit * 3,
     width: '100%',
     background: theme.palette.primary.main,
     color: theme.palette.common.white,
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
   },
   details: {
-    width: '100%',
+    width: '80%',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    '&:last-child': {
+      marginTop: '0.4em'
+    }
   },
   icon: {
     marginRight: '0.4em'

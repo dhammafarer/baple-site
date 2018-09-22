@@ -9,26 +9,16 @@ interface Props {
     pathname: string
   }
   data: {
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
-    logo: any
-    nav: any
+    app: any
   }
 }
 
 class DefaultLayout extends React.Component<Props, {}> {
   render () {
     const {children, data, location} = this.props;
+    console.log(data.app);
     return (
-      <App
-        title={data.site.siteMetadata.title}
-        nav={data.nav}
-        lang={'es'}
-        logo={data.logo.sizes.src}
-      >
+      <App {...data.app}>
         {children()}
       </App>
     );
@@ -39,18 +29,8 @@ export default withRoot(DefaultLayout);
 
 export const query = graphql`
   query DefaultLayoutQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    logo: imageSharp(id: {regex: "/LOGO_Baple_Plastics.png/"}) {
-      sizes(maxWidth: 120) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    nav: pagesYaml(id: {regex: "/nav-index.yml/"}) {
-     ...NavPagesYaml
+    app: pagesYaml(id: {regex: "/app.yml/"}) {
+     ...AppYaml
     }
   }
 `;
