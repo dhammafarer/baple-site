@@ -15,7 +15,7 @@ products:
       - "Por favor, contáctenos para poder ofrecerle un servicio personalizado, asesoramiento y catálogo completo."
     link:
       label: Contacta con nosotros!
-      to: /contact
+      to: /plastics/contact
     spec:
       - name: Especificaciones Generales
         params:
@@ -40,7 +40,7 @@ products:
     imgs:
     link:
       label: Contacta con nosotros!
-      to: /contact
+      to: /plastics/contact
     spec:
       - name: Especificaciones Generales
         params:

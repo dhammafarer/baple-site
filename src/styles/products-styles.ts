@@ -2,26 +2,38 @@ import { createStyles, Theme } from "@material-ui/core/styles";
 
 const productsStyles = (theme:Theme) => createStyles({
   section: {
-    marginTop: theme.spacing.unit * 3,
+    marginTop: '3em',
   },
   text: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    maxWidth: 400,
-    margin: '0 auto',
+    margin: '1em 0',
   },
   card: {
-    marginTop: theme.spacing.unit * 3,
+    height: '100%',
   },
-  cardHeader: {
-    backgroundColor: theme.palette.grey[200]
+  media: {
+    width: '100%',
+    heigh: 'auto',
+  },
+  header: {
+    margin: '2em 0',
+    textAlign: "center",
+  },
+  heading: {
+    color: theme.palette.grey[900],
+    fontSize: '2em',
   },
   cardContent: {
-    padding: theme.spacing.unit * 3
+    padding: theme.spacing.unit * 3,
+  },
+  spec: {
+    marginTop: '2em',
+  },
+  table: {
+    marginTop: '1em',
+  },
+  key: {
+    fontWeight: 700,
+    color: theme.palette.grey[700]
   }
 });
 

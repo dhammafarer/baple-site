@@ -25,7 +25,7 @@ const Contact: React.SFC<Props> = ({ heading, logo, mainImg, details, classes })
   <section className={classes.section}>
     <div className={classes.header}>
       <img src={logo.childImageSharp.sizes.src} className={classes.logo}/>
-      <Typography className={classes.heading}>
+      <Typography variant="display3" className={classes.heading}>
         {heading}
       </Typography>
     </div>

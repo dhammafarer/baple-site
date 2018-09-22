@@ -5,12 +5,15 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
+import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Table from "@material-ui/core/Table";
 import TableHead from "@material-ui/core/TableHead";
 import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
+import Button from "@material-ui/core/Button";
+import Link from 'gatsby-link';
 
 interface Param {
   key: string
@@ -24,9 +27,13 @@ interface Spec {
 interface Product {
   classes: any
   heading: string
-  text: string
+  text: Array<string>
   mainImg: Image
   spec: Array<Spec>
+  link: {
+    to: string
+    label: string
+  }
 }
 
 interface Props {
@@ -37,64 +44,74 @@ interface Props {
 
 const ProductsList: React.SFC<Props> = ({ products, classes }) => (
   <section className={classes.section}>
-    {
-      products.map(x =>
-        <Card key={x.heading} className={classes.card}>
-          <CardHeader
-            className={classes.cardHeader}
-            title={
-              <Typography variant="title">
-                {x.heading}
-              </Typography>
-            }
-          />
-          <CardContent className={classes.cardContent}>
-            <Grid container>
-              <Grid item md={3}>
-                <img src={x.mainImg.childImageSharp.sizes.src}/>
-              </Grid>
-              <Grid item md={9}>
-                {
-                  x.spec.map((s, j) =>
-                    <div key={j}>
-                      <Typography variant="caption">
-                        {s.name}
-                      </Typography>
-                      <Table>
-                        <TableHead>
-                          <TableRow>
-                            <TableCell>
-                              Parameter
-                            </TableCell>
-                            <TableCell>
-                              Value
-                            </TableCell>
-                          </TableRow>
-                        </TableHead>
-                          {
-                            s.params.map((c, k) =>
-                              <TableRow key={k}>
-                                <TableCell>
-                                  {c.key}
-                                </TableCell>
-                                <TableCell>
-                                  {c.value}
-                                </TableCell>
-                              </TableRow>
-                            )
-                          }
-                        <TableBody>
-                        </TableBody>
-                      </Table>
-                    </div>
-                  )
-                }
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
-      )
-    }
+    <Grid container spacing={32}>
+      {
+        products.map(x =>
+        <Grid item xs={12} md={6}>
+          <Card key={x.heading} className={classes.card}>
+            <CardContent className={classes.cardContent}>
+              <img className={classes.media} src={x.mainImg.childImageSharp.sizes.src}/>
+
+              <div className={classes.header}>
+                <Typography variant="title" className={classes.heading}>
+                  {x.heading}
+                </Typography>
+
+                <div className={classes.text}>
+                  {x.text.map((t,n) =>
+                    <Typography key={n} variant="body2" className={classes.paragraph}>
+                      {t}
+                    </Typography>
+                  )}
+                </div>
+                <Link to={x.link.to}>
+                  <Button color="primary" variant="outlined">
+                    {x.link.label}
+                  </Button>
+                </Link>
+              </div>
+
+              {
+                x.spec.map((s, j) =>
+                  <div key={j} className={classes.spec}>
+                    <Typography variant="subheading">
+                      {s.name}
+                    </Typography>
+                    <Table className={classes.table}>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>
+                            Parameter
+                          </TableCell>
+                          <TableCell>
+                            Value
+                          </TableCell>
+                        </TableRow>
+                      </TableHead>
+                        {
+                          s.params.map((c, k) =>
+                            <TableRow key={k}>
+                              <TableCell className={classes.key}>
+                                {c.key}
+                              </TableCell>
+                              <TableCell>
+                                {c.value}
+                              </TableCell>
+                            </TableRow>
+                          )
+                        }
+                      <TableBody>
+                      </TableBody>
+                    </Table>
+                  </div>
+                )
+              }
+            </CardContent>
+          </Card>
+        </Grid>
+        )
+      }
+    </Grid>
   </section>
 );
 
@@ -111,6 +128,10 @@ export const ProductsFragment = graphql`
             src
           }
         }
+      }
+      link {
+        to
+        label
       }
       spec {
         name

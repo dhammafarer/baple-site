@@ -19,7 +19,6 @@ const moreStyles = (theme:Theme) => createStyles({
   },
   heading: {
     fontWeight: 300,
-    fontSize: '4em',
     textTransform: 'uppercase',
     color: theme.palette.grey[700],
     textAlign: 'center',

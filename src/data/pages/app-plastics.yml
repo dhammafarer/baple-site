@@ -11,13 +11,13 @@ contact:
 nav:
   home: /plastics
   links:
-    - to: /plastics/about
-      label: About
-    - to: /plastics/contact
-      label: Contact
     - to: /plastics/pulverizadores
       label: Pulverizadores
     - to: /plastics/bombas-de-locion
       label: Bombas de locion
+    - to: /plastics/about
+      label: About
+    - to: /plastics/contact
+      label: Contact
     - to: /
       label: Baple Group
