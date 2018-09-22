@@ -9,7 +9,7 @@ const navStyles = (theme:Theme) => createStyles({
     textAlign: 'center',
     marginTop: '1.5em',
     alignItems: 'center',
-    paddingTop: '2em',
+    paddingTop: '1em',
   },
   close: {
     alignSelf: 'flex-end',

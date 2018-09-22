@@ -1,0 +1,11 @@
+contact:
+  heading: Contact Us!
+  logo: "./img/logos/baple-plastics-logo.png"
+  mainImg: "./img/learn-more.jpg"
+  details:
+    telephone: +886-2-2345-2384
+    email: info@baple.es
+    address:
+      - "5F, No. 35, Daye Rd"
+      - "Beitou District, Taipei"
+      - "Taiwan"
