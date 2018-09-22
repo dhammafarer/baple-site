@@ -1,6 +1,6 @@
 intro:
-  heading: Pulverizadores
-  mainImg: './img/WelcomeImage_Sprayer.jpg'
+  heading: Bombas de loción
+  mainImg: './img/2WelcomeImage_Bombalocion.jpg'
   text:
     - "Baple dispone de la gran mayoría de soluciones demandadas por la industria. Adicionalmente, la incorporación de nuevas y modernas soluciones forma parte del trabajo rutinario para ofrecer siempre soluciones de valor añadido a nuestros partners."
   link:
@@ -8,10 +8,10 @@ intro:
     label: Contact
 
 products:
-  - heading: Pulverizadores
-    mainImg: './img/Product_pulverizador_0919.jpg'
+  - heading: Bombas de loción
+    mainImg: './img/Product_BombaLocion2.jpg'
     text:
-      - "¿Interesado en Pulverizadores?"
+      - "¿Interesado en Bombas de loción?"
       - "Por favor, contáctenos para poder ofrecerle un servicio personalizado, asesoramiento y catálogo completo."
     link:
       label: Contacta con nosotros!
@@ -20,23 +20,19 @@ products:
       - name: Especificaciones Generales
         params:
          - key: Formatos
-           value: "28/400; 28/410; 28/415"
+           value: "24/410; 24/415; 28/400; 28/410; 28/415"
          - key: Ratio Descarga
-           value: "1.4 ± 0.1 ml/T"
+           value: "1.2 ± 1.5 ml/T"
          - key: Diseño
            value: "Rango completo de diseños"
          - key: Color
            value: "Rango completo de colores y combinaciones"
-         - key: Nozzle
-           value: "Spray/Stream, Spray/Spray, Foam, Plastic mesh/Foam"
-         - key: Gatillo
-           value: "7 diferentes modelos de gatillo"
 
-  - heading: Mini pulverizadores
-    mainImg: './img/Product_Pulver2.jpg'
+  - heading: "Bombas de loción: Espuma"
+    mainImg: './img/Product_BombaLocion3.jpg'
     text:
-      - "¿Interesado en Pulverizadores?"
-      - "Por favor, contáctenos para poder ofrecerle un servicio personalizado, asesoramiento y catálogo completo."
+       - "¿Interesado en Bombas de loción: Espuma?"
+       - "Por favor, contáctenos para poder ofrecerle un servicio personalizado, asesoramiento y catálogo completo."
     imgs:
     link:
       label: Contacta con nosotros!
@@ -45,9 +41,9 @@ products:
       - name: Especificaciones Generales
         params:
           - key: Formatos
-            value: "24/410; 28/400; 28/410; 43/400"
+            value: "24/410; 24/415; 28/400; 28/410; 28/415"
           - key: Ratio Descarga
-            value: "1.0 ± 0.1 ml/T"
+            value: "1.2 ± 1.5 ml/T"
           - key: Diseño
             value: "Rango completo de diseños"
           - key: Color
