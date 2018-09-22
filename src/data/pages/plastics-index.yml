@@ -59,14 +59,14 @@ categories:
         to: /plastics/botellas
 
 ### Section Contact us
-contact:
-  heading: Contact us
-  subheading: Quieres saber más de nosotros?
-  mainImg: baple-plastics-logo.png
-  logo:
+more:
+  heading: Quieres saber más de nosotros?
+  subheading:
+  mainImg: './img/learn-more.jpg'
+  logo: './img/logos/baple-plastics-logo.png'
   text:
   imgs:
-    link:
+  link:
     label: Contact us!
     to: /contact
 

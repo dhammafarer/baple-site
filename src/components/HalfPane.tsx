@@ -24,14 +24,16 @@ const HalfPane: React.SFC<Props> = ({ children, classes, src, reverse }) => (
           {children}
         </div>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <div
-          className={classes.image}
-          style={{
-            backgroundImage: `url(${src})`
-          }}
-        />
-      </Grid>
+      <Hidden smDown>
+        <Grid item md={6}>
+          <div
+            className={classes.image}
+            style={{
+              backgroundImage: `url(${src})`
+            }}
+          />
+        </Grid>
+      </Hidden>
     </Grid>
     <Hidden mdUp>
       <img className={classes.imageSm} src={src}/>

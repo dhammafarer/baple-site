@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Categories from '../../components/Categories';
+import More from '../../components/More';
 import Welcome from '../../components/Welcome';
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
     pagesYaml: {
       welcome: any
       categories: any
+      more: any
     }
   }
 }
@@ -19,6 +21,7 @@ class PlasticsIndexPage extends React.Component<Props, {}> {
       <div>
         <Welcome {...p.welcome}/>
         <Categories {...p.categories}/>
+        <More {...p.more}/>
       </div>
     );
   }
@@ -31,6 +34,7 @@ export const query = graphql`
     pagesYaml(id: {regex: "/plastics-index.yml/"}) {
      ...WelcomeYaml
      ...CategoriesYaml
+     ...MoreYaml
     }
   }
 `

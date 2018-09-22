@@ -5,7 +5,6 @@ const halfPaneStyles = (theme:Theme) => createStyles({
   },
   grid: {
     height: '100%',
-    minHeight: 'calc(100vh - 64px)',
   },
   image: {
     width: '100%',
@@ -16,6 +15,7 @@ const halfPaneStyles = (theme:Theme) => createStyles({
   },
   text: {
     height: '100%',
+    width: '100%',
   },
   imageSm: {
     width: '100%',
