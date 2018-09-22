@@ -4,8 +4,6 @@ logo: './img/logos/baple-group-logo.png'
 nav:
   home: '/'
   links:
-    - to: /wines
-      label: Baple Wines
     - to: /plastics
       label: Baple Plastics
     - to: /metal-packaging
@@ -14,5 +12,3 @@ nav:
       label: Baple Energy
     - to: /engineering
       label: Baple Engineering
-    - to: /
-      label: Baple Group

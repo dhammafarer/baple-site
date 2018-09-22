@@ -14,7 +14,13 @@ nav:
     - to: /plastics/pulverizadores
       label: Pulverizadores
     - to: /plastics/bombas-de-locion
-      label: Bombas de locion
+      label: Bombas de loción
+    - to: /plastics/micropulverizadores
+      label: Micropulverizadores
+    - to: /plastics/botellas
+      label: Botellas
+    - to: /plastics/tapones
+      label: Tapones
     - to: /plastics/about
       label: About
     - to: /plastics/contact

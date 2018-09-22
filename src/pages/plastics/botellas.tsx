@@ -7,7 +7,7 @@ interface Props {
   }
 }
 
-class PlasticsPulverizadores extends React.Component<Props, {}> {
+class PlasticsBotellas extends React.Component<Props, {}> {
   render () {
     const p = this.props.data.pagesYaml;
     return (
@@ -16,11 +16,11 @@ class PlasticsPulverizadores extends React.Component<Props, {}> {
   }
 }
 
-export default PlasticsPulverizadores;
+export default PlasticsBotellas;
 
 export const query = graphql`
-  query PlasticsPulverizadoresQuery {
-    pagesYaml(id: {regex: "/plastics-pulverizadores.yml/"}) {
+  query PlasticsBotellasQuery {
+    pagesYaml(id: {regex: "/plastics-botellas.yml/"}) {
       ...ProductsPageYaml
     }
   }
