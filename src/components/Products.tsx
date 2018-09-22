@@ -12,36 +12,53 @@ import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 
-interface Props {
-  lang: Lang
-  content: any
-  classes: any
+interface Param {
+  key: string
+  value: string
 }
 
-const ProductsList: React.SFC<Props> = ({ content, classes, lang }) => (
+interface Spec {
+  name: string
+  params: Array<Param>
+}
+interface Product {
+  classes: any
+  heading: string
+  text: string
+  mainImg: Image
+  spec: Array<Spec>
+}
+
+interface Props {
+  classes: any
+  products: Array<Product>
+}
+
+
+const ProductsList: React.SFC<Props> = ({ products, classes }) => (
   <section className={classes.section}>
     {
-      content.map((x:any) =>
-        <Card key={x.title} className={classes.card}>
+      products.map(x =>
+        <Card key={x.heading} className={classes.card}>
           <CardHeader
             className={classes.cardHeader}
             title={
               <Typography variant="title">
-                {x.title}
+                {x.heading}
               </Typography>
             }
           />
           <CardContent className={classes.cardContent}>
             <Grid container>
               <Grid item md={3}>
-                <img src={x.img.childImageSharp.sizes.src}/>
+                <img src={x.mainImg.childImageSharp.sizes.src}/>
               </Grid>
               <Grid item md={9}>
                 {
-                  x.spec.map((s:any, j:number) =>
+                  x.spec.map((s, j) =>
                     <div key={j}>
                       <Typography variant="caption">
-                        {s.title}
+                        {s.name}
                       </Typography>
                       <Table>
                         <TableHead>
@@ -55,7 +72,7 @@ const ProductsList: React.SFC<Props> = ({ content, classes, lang }) => (
                           </TableRow>
                         </TableHead>
                           {
-                            s.cells.map((c:any, k:number) =>
+                            s.params.map((c, k) =>
                               <TableRow key={k}>
                                 <TableCell>
                                   {c.key}
@@ -82,3 +99,26 @@ const ProductsList: React.SFC<Props> = ({ content, classes, lang }) => (
 );
 
 export default withStyles(styles)(ProductsList);
+
+export const ProductsFragment = graphql`
+  fragment ProductsYaml on PagesYaml {
+    products {
+      heading
+      text
+      mainImg {
+        childImageSharp {
+          sizes(maxWidth: 800) {
+            src
+          }
+        }
+      }
+      spec {
+        name
+        params {
+          key
+          value
+        }
+      }
+    }
+  }
+`;

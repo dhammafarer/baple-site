@@ -1,40 +1,28 @@
 import * as React from 'react';
-import Categories from '../../components/Categories';
-import More from '../../components/More';
-import Welcome from '../../components/Welcome';
+import ProductsPage from '../../components/pages/ProductsPage';
 
 interface Props {
   data: {
-    pagesYaml: {
-      welcome: any
-      categories: any
-      more: any
-    }
+    pagesYaml: any
   }
 }
 
-class PlasticsIndexPage extends React.Component<Props, {}> {
+class PlasticsPulverizadores extends React.Component<Props, {}> {
   render () {
     const p = this.props.data.pagesYaml;
     console.log(p);
     return (
-      <div>
-        <Welcome {...p.welcome}/>
-        <Categories {...p.categories}/>
-        <More {...p.more}/>
-      </div>
+      <ProductsPage {...p}/>
     );
   }
 }
 
-export default PlasticsIndexPage;
+export default PlasticsPulverizadores;
 
 export const query = graphql`
   query PlasticsPulverizadoresQuery {
-    pagesYaml(id: {regex: "/plastics-index.yml/"}) {
-     ...WelcomeYaml
-     ...CategoriesYaml
-     ...MoreYaml
+    pagesYaml(id: {regex: "/plastics-pulverizadores.yml/"}) {
+      ...ProductsPageYaml
     }
   }
 `

@@ -2,6 +2,7 @@ title: Baple Group
 lang: es
 logo: './img/logos/baple-group-logo.png'
 nav:
+  home: '/'
   links:
     - to: /wines
       label: Baple Wines

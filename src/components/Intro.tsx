@@ -1,45 +1,66 @@
 import * as React from 'react';
-import { createStyles, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
+import styles from '../styles/intro-styles';
 import HalfPane from './HalfPane';
 import Typography from "@material-ui/core/Typography";
-
-const styles = (theme:any) => createStyles({
-  text: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    maxWidth: 400,
-    margin: '0 auto',
-  },
-});
+import Button from "@material-ui/core/Button";
+import Link from 'gatsby-link';
 
 interface Props {
-  lang: Lang
-  content: any
   classes: any
+  heading: string
+  text: Array<string>
+  mainImg: Image
+  link: {
+    label: string
+    to: string
+  }
 }
 
-const ProductsIntro: React.SFC<Props> = ({ content, classes, lang }) => (
-  <HalfPane reverse src={content.img.childImageSharp.sizes.src}>
-    <div className={classes.text}>
+const Intro: React.SFC<Props> = ({ heading, text, mainImg, link, classes }) => (
+  <HalfPane reverse src={mainImg.childImageSharp.sizes.src}>
+    <div className={classes.section}>
       <Typography variant="display2"
-        className={classes.title}
-        gutterBottom
+        className={classes.heading}
       >
-        {content.title}
+        {heading}
       </Typography>
-      {
-        content.text.map((x:string, i:number) =>
-          <Typography key={i}>
-            {x}
-          </Typography>
-        )
-      }
+      <div className={classes.text}>
+        {
+          text.map((x, i) =>
+            <Typography key={i} className={classes.paragraph}>
+              {x}
+            </Typography>
+          )
+        }
+      </div>
+      <Link to={link.to}>
+        <Button variant="contained" className={classes.button}>
+          {link.label}
+        </Button>
+      </Link>
     </div>
   </HalfPane>
 );
 
-export default withStyles(styles)(ProductsIntro);
+export default withStyles(styles)(Intro);
+
+export const IntroFragment = graphql`
+  fragment IntroYaml on PagesYaml {
+    intro {
+      heading
+      mainImg {
+        childImageSharp {
+          sizes(maxWidth: 1200) {
+            src
+          }
+        }
+      }
+      text
+      link {
+        to
+        label
+      }
+    }
+  }
+`;
