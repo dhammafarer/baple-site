@@ -15,9 +15,6 @@ const aboutStyles = (theme:Theme) => createStyles({
     backgroundPosition: 'center center',
     overflow: 'hidden',
   },
-  mainImg: {
-    width: '100%',
-  },
   heading: {
     fontSize: '1.6em',
     fontWeight: 700,
@@ -34,18 +31,13 @@ const aboutStyles = (theme:Theme) => createStyles({
     paddingBottom: '3em',
     margin: '0 auto',
     maxWidth: 1000,
-    borderBottom: '1px solid grey',
   },
   logoPane: {
-    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  logo: {
-    width: 200,
-    height: 200,
+    width: '100%',
   },
   text: {
   },
@@ -53,6 +45,21 @@ const aboutStyles = (theme:Theme) => createStyles({
     marginBottom: '1em',
     textAlign: 'center',
   },
+  point: {
+    background: theme.palette.primary.light,
+    padding: '1em',
+    margin: '0.4em',
+  },
+  pointText: {
+    color: theme.palette.common.white,
+    textTransform: 'uppercase',
+    textAlign: 'center',
+  },
+  imgs: {
+  },
+  img: {
+    width: '100%',
+  }
 });
 
 export default aboutStyles;

@@ -12,17 +12,25 @@ about:
 
 advantages:
   heading: Advantages of Baple Plastic
-  mainImg:
   points:
     - Innovacción y Tecnología
     - Servicio Personalizado
     - Baple TCS System
-  logo:
   text:
     - "Innovación y Tecnología es la base para poder suministrar productos con los niveles de calidad exigidos por el mercado internacional, ofreciendo soluciones cada vez más modernas y más personalizadas a nuestros partners."
     - "Debido a los múltiples centros de fabricación, tenemos la capacidad de ofrecer una gran flexibilidad en la personalización de productos y servicios adicionales que aporten valor añadido al consumidor."
   imgs:
-    - src: './img/Baple_Company_TCS_system.jpg'
+    - img: './img/Baple_Company_TCS_system.jpg'
       label: 'Baple Company TCS System'
-    - src: './img/Baple_Company_QA_system.jpg'
+    - img: './img/Baple_Company_QA_system.jpg'
       label: 'Baple QA System'
+more:
+  heading: Quieres saber más de nosotros?
+  subheading:
+  mainImg: './img/learn-more.jpg'
+  logo: './img/logos/baple-plastics-logo.png'
+  text:
+  imgs:
+  link:
+    label: Contact us!
+    to: /plastics/contact

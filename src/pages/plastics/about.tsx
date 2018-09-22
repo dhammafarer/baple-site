@@ -9,6 +9,7 @@ interface Props {
 
 class PlasticsAboutPage extends React.Component<Props, {}> {
   render () {
+    console.log(this.props.data);
     return (
       <AboutPage {...this.props.data.pagesYaml}/>
     );
