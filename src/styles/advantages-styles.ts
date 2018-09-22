@@ -16,7 +16,7 @@ const aboutStyles = (theme:Theme) => createStyles({
     overflow: 'hidden',
   },
   heading: {
-    fontSize: '1.6em',
+    fontSize: '1.8em',
     fontWeight: 700,
     color: theme.palette.primary.main,
     width: '100%',

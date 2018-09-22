@@ -19,7 +19,7 @@ const aboutStyles = (theme:Theme) => createStyles({
     width: '100%',
   },
   heading: {
-    fontSize: '1.6em',
+    fontSize: '1.8em',
     fontWeight: 700,
     color: theme.palette.primary.main,
     width: '100%',

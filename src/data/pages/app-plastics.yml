@@ -9,6 +9,7 @@ contact:
     - "Beitou District, Taipei"
     - "Taiwan"
 nav:
+  home: /plastics
   links:
     - to: /plastics/about
       label: About

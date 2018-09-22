@@ -21,6 +21,7 @@ interface Props {
   logo: string
   title: string
   nav: {
+    home: string
     links: Array<any>
   }
 }
@@ -37,10 +38,12 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) 
       <IconButton className={classes.close}>
         <CloseIcon color="secondary"/>
       </IconButton>
-      <img className={classes.logo} src={logo}/>
-      <Typography variant="title" className={classes.title}>
-        {title}
-      </Typography>
+      <Link to={nav.home}>
+        <img className={classes.logo} src={logo}/>
+        <Typography variant="title" className={classes.title}>
+          {title}
+        </Typography>
+      </Link>
       <List className={classes.list}>
         <Divider/>
         {
@@ -82,6 +85,7 @@ export default withStyles(styles)(Nav);
 export const NavFragment = graphql`
   fragment NavYaml on PagesYaml {
     nav {
+      home
       links {
         to
         label
