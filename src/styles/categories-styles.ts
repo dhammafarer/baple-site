@@ -20,12 +20,9 @@ const categoriesStyles = (theme:Theme) => createStyles({
   },
   content: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing.unit * 3,
-    [theme.breakpoints.up('sm')]: {
-      flexDirection: 'column'
-    }
   },
   img: {
     width: 150,
@@ -37,9 +34,7 @@ const categoriesStyles = (theme:Theme) => createStyles({
     fontSize: '1.4em',
     fontWeight: 700,
     color: theme.palette.grey[700],
-    [theme.breakpoints.up('sm')]: {
-      marginTop: '1em'
-    }
+    marginTop: '1em'
   }
 });
 
