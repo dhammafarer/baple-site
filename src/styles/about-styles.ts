@@ -1,19 +1,57 @@
 import { createStyles, Theme } from "@material-ui/core/styles";
 
 const aboutStyles = (theme:Theme) => createStyles({
-  company: {
+  section: {
+    background: theme.palette.common.white,
+  },
+  head: {
+    display: 'flex',
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    width: '100%',
+    height: 300,
+    backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    minHeight: 'calc(100vh - 64px)',
+    backgroundPosition: 'center center',
+    overflow: 'hidden',
+  },
+  mainImg: {
+    width: '100%',
+  },
+  heading: {
+    fontSize: '1.6em',
+    fontWeight: 700,
+    color: theme.palette.primary.main,
+    width: '100%',
+    textTransform: 'uppercase',
+    marginBottom: '1.2em',
+    textAlign: 'center',
+  },
+  body: {
+    paddingLeft: theme.spacing.unit * 3,
+    paddingRight: theme.spacing.unit * 3,
+    paddingTop: '3em',
+    paddingBottom: '3em',
+    margin: '0 auto',
+    maxWidth: 1000,
+    borderBottom: '1px solid grey',
+  },
+  logoPane: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    padding: theme.spacing.unit * 3,
+    alignItems: 'center',
   },
-  paper: {
-    margin: '0 auto',
-    maxWidth: 600,
-    padding: theme.spacing.unit * 4,
-  }
+  logo: {
+    width: 200,
+    height: 200,
+  },
+  text: {
+  },
+  paragraph: {
+    marginBottom: '1em',
+    textAlign: 'center',
+  },
 });
 
 export default aboutStyles;

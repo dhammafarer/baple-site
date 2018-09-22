@@ -16,6 +16,7 @@ interface Props {
 class PlasticsIndexPage extends React.Component<Props, {}> {
   render () {
     const p = this.props.data.pagesYaml;
+    console.log(p);
     return (
       <div>
         <Welcome {...p.welcome}/>
@@ -29,7 +30,7 @@ class PlasticsIndexPage extends React.Component<Props, {}> {
 export default PlasticsIndexPage;
 
 export const query = graphql`
-  query PlasticsIndexQuery {
+  query PlasticsContactQuery {
     pagesYaml(id: {regex: "/plastics-index.yml/"}) {
      ...WelcomeYaml
      ...CategoriesYaml

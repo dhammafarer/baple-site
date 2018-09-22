@@ -9,7 +9,6 @@ interface Props {
 
 class IndexPage extends React.Component<Props, {}> {
   render () {
-    console.log(this.props.data);
     return (
       <LandingPage {...this.props.data.pagesYaml}/>
     );

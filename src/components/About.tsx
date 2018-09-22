@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withStyles } from "@material-ui/core/styles";
 import styles from '../styles/about-styles';
+import HalfPane from '../components/HalfPane';
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
@@ -8,35 +9,35 @@ import Link from 'gatsby-link';
 
 interface Props {
   classes: any
-  company: any
+  heading: string
+  mainImg: Image
+  logo: Image
+  text: Array<string>
 }
 
-const About: React.SFC<Props> = ({ company, classes }) => (
-  <section
-    className={classes.company}
-    style={{
-      backgroundImage: `linear-gradient(to right, rgba(255,255,255,.1),rgba(255,255,255,0.4)),url(${company.img.childImageSharp.sizes.src})`,
-    }}
-  >
-    <div>
-      <Grid container justify="flex-end">
-        <Grid item xs={12} md={6}>
-          <Paper className={classes.paper}>
-            <Typography
-              color="primary"
-              variant="display1"
-              gutterBottom
-            >
-              {company.title}
-            </Typography>
-            {
-              company.text.map((x:string, i:number) =>
-                <Typography key={i} variant="body1" gutterBottom>
-                  {x}
-                </Typography>
-              )
-            }
-          </Paper>
+const About: React.SFC<Props> = ({ heading, mainImg, logo, text, classes }) => (
+  <section className={classes.section}>
+    <div
+      style={{backgroundImage: `url(${mainImg.childImageSharp.sizes.src})`}}
+      className={classes.head}
+    >
+    </div>
+    <div className={classes.body}>
+      <Grid container>
+        <Grid item md={6} sm={12} className={classes.logoPane}>
+          <img src={logo.childImageSharp.sizes.src} className={classes.logo}/>
+        </Grid>
+        <Grid item md={6} sm={12}>
+          <Typography color="inherit" className={classes.heading}>
+            {heading}
+          </Typography>
+          <div className={classes.text}>
+            {text.map((t,i) =>
+              <Typography variant="body2" className={classes.paragraph} color="inherit">
+                {t}
+              </Typography>
+            )}
+          </div>
         </Grid>
       </Grid>
     </div>
@@ -44,3 +45,26 @@ const About: React.SFC<Props> = ({ company, classes }) => (
 );
 
 export default withStyles(styles)(About);
+
+export const AboutFragment = graphql`
+  fragment AboutYaml on PagesYaml {
+    about {
+      heading
+      text
+      logo {
+        childImageSharp {
+          sizes(maxWidth: 200) {
+            src
+          }
+        }
+      }
+      mainImg {
+        childImageSharp {
+          sizes(maxWidth: 1200) {
+            src
+          }
+        }
+      }
+    }
+  }
+`;

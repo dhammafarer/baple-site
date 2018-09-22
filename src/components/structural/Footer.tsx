@@ -6,6 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import FacebookIcon from 'mdi-material-ui/Facebook';
 import TwitterIcon from 'mdi-material-ui/Twitter';
 import YoutubeIcon from 'mdi-material-ui/Youtube';
+import InstagramIcon from 'mdi-material-ui/Instagram';
 
 import { withStyles } from "@material-ui/core/styles";
 import footerStyles from '../../styles/footer-styles';
@@ -35,6 +36,7 @@ const Footer: React.SFC<Props> = ({ classes, title, logo }) => (
     <div className={classNames(classes.footerSocial, classes.layout)}>
       <IconButton><FacebookIcon/></IconButton>
       <IconButton><TwitterIcon/></IconButton>
+      <IconButton><InstagramIcon/></IconButton>
       <IconButton><YoutubeIcon/></IconButton>
     </div>
     <div className={classNames(classes.footerCopy, classes.layout)}>
