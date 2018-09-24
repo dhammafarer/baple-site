@@ -25,7 +25,7 @@ const Contact: React.SFC<Props> = ({ heading, logo, mainImg, details, classes })
   <section className={classes.section}>
     <div className={classes.header}>
       <img src={logo.childImageSharp.sizes.src} className={classes.logo}/>
-      <Typography variant="display3" className={classes.heading}>
+      <Typography variant="display2" className={classes.heading}>
         {heading}
       </Typography>
     </div>
@@ -35,7 +35,7 @@ const Contact: React.SFC<Props> = ({ heading, logo, mainImg, details, classes })
           <Paper className={classes.detailPane}>
             <PhoneIcon className={classes.icon}/>
             <div className={classes.textContent}>
-              <Typography className={classes.detailText}>
+              <Typography className={classes.detailText} variant="title">
                 {details.telephone}
               </Typography>
             </div>
@@ -46,7 +46,7 @@ const Contact: React.SFC<Props> = ({ heading, logo, mainImg, details, classes })
           <Paper className={classes.detailPane}>
             <EmailIcon className={classes.icon}/>
             <div className={classes.textContent}>
-              <Typography className={classes.detailText}>
+              <Typography className={classes.detailText} variant="title">
                 {details.email}
               </Typography>
             </div>
@@ -59,7 +59,7 @@ const Contact: React.SFC<Props> = ({ heading, logo, mainImg, details, classes })
             <div className={classes.textContent}>
               <div className={classes.address}>
                 {details.address.map((x, i) =>
-                  <Typography key={i} className={classes.detailText}>
+                  <Typography className={classes.detailText} variant="title">
                     {x}
                   </Typography>
                 )}

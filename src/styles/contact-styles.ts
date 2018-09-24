@@ -57,9 +57,7 @@ const moreStyles = (theme:Theme) => createStyles({
     flexDirection: 'column',
   },
   detailText: {
-    fontSize: '1.2em',
     lineSpacing: '2em',
-
   },
   icon: {
     color: theme.palette.grey[400],
