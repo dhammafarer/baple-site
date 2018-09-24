@@ -3,16 +3,16 @@ import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import PhoneIcon from "@material-ui/icons/Phone";
-import EmailIcon from "@material-ui/icons/Email";
 import { withStyles } from "@material-ui/core/styles";
 import styles from '../styles/nav-styles';
 import Link from 'gatsby-link';
 import CloseIcon from "@material-ui/icons/Close";
+import PhoneIcon from "@material-ui/icons/Phone";
+import EmailIcon from "@material-ui/icons/Email";
 
 interface Lnk {
   to: string
@@ -53,19 +53,51 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) 
       <List className={classes.list}>
         <Divider/>
         {
-          nav.links.map((x:any) =>
-            <Link key={x.to} to={x.to}>
-              <ListItem button divider style={{justifyContent: "center"}}>
-                <Typography
-                  variant="caption"
-                  className={classes.link}
-                  color="inherit"
-                >
-                  {x.label}
-                </Typography>
+          nav.links.map((x:any) => {
+            return (
+              x.links ?
+              <ListItem divider className={classes.listItem}>
+                <List className={classes.list}>
+                  <ListItem button className={classes.listItem}>
+                    <Link to={x.to} className={classes.link}>
+                      <Typography
+                        variant="body1"
+                        color="inherit"
+                        className={classes.linkText}
+                      >
+                        {x.label}
+                      </Typography>
+                    </Link>
+                  </ListItem>
+                  {x.links.map((y:any) =>
+                    <ListItem button key={y.to} className={classes.listItem}>
+                      <Link to={y.to} className={classes.linkNested}>
+                        <Typography
+                          variant="body1"
+                          color="inherit"
+                          className={classes.linkNestedText}
+                        >
+                          {y.label}
+                        </Typography>
+                      </Link>
+                    </ListItem>
+                  )}
+                </List>
               </ListItem>
-            </Link>
-          )
+              :
+              <ListItem key={x.to} button divider className={classes.listItem}>
+                <Link to={x.to} className={classes.link}>
+                  <Typography
+                    variant="body1"
+                    color="inherit"
+                    className={classes.linkText}
+                  >
+                    {x.label}
+                  </Typography>
+                </Link>
+              </ListItem>
+            )
+          })
         }
       </List>
       <div className={classes.contact}>

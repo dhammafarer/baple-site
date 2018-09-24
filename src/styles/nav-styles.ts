@@ -31,9 +31,25 @@ const navStyles = (theme:Theme) => createStyles({
     flexGrow: 1,
     width: '100%',
   },
+  listItem: {
+    padding: 0,
+    width: '100%',
+    textAlign: 'center',
+  },
   link: {
+    width: '100%',
+    padding: '0.6em',
+  },
+  linkNested: {
+    width: '100%',
+    padding: '0.6em',
+  },
+  linkText: {
     color: theme.palette.grey[700],
-    fontSize: '1em',
+    fontWeight: 700,
+  },
+  linkNestedText: {
+    color: theme.palette.grey[700],
   },
   contact: {
     flexShrink: 0,
@@ -57,6 +73,9 @@ const navStyles = (theme:Theme) => createStyles({
   },
   icon: {
     marginRight: '0.4em'
+  },
+  nestedItem: {
+    flexDirection: 'column',
   }
 });
 
