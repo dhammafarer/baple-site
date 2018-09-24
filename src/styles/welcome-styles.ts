@@ -3,6 +3,8 @@ import { createStyles, Theme } from "@material-ui/core/styles";
 const welcomeStyles = (theme:Theme) => createStyles({
   section: {
     background: theme.palette.grey[200],
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
     minHeight: 'calc(100vh - 64px)',
     padding: '3em 0',
     height: '100%',

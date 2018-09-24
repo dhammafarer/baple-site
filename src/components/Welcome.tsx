@@ -7,18 +7,15 @@ import Grid from "@material-ui/core/Grid";
 
 interface Props {
   text: Array<string>
-  logo: {
-    childImageSharp: {
-      sizes: {
-        src: string
-      }
-    }
-  }
+  logo: Image
+  mainImg: Image
   classes: any
 }
 
-const Welcome: React.SFC<Props> = ({ text, logo, classes }) => (
-  <div className={classes.section}>
+const Welcome: React.SFC<Props> = ({ text, logo, mainImg, classes }) => (
+  <div className={classes.section}
+    style={{backgroundImage: (mainImg ? `url(${mainImg.childImageSharp.sizes.src})` : '')}}
+  >
     <img className={classes.logo} src={logo.childImageSharp.sizes.src}/>
 
     <div className={classes.text}>
@@ -26,7 +23,6 @@ const Welcome: React.SFC<Props> = ({ text, logo, classes }) => (
         variant="display1"
         className={classes.english}
         color="inherit"
-        gutterBottom
       >
         {text[0]}
       </Typography>
@@ -34,7 +30,6 @@ const Welcome: React.SFC<Props> = ({ text, logo, classes }) => (
         variant="headline"
         color="inherit"
         className={classes.spanish}
-        gutterBottom
       >
         {text[1]}
       </Typography>
@@ -48,6 +43,13 @@ export const WelcomeFragment = graphql`
   fragment WelcomeYaml on PagesYaml {
     welcome {
       text
+      mainImg {
+        childImageSharp {
+          sizes(maxWidth: 1600) {
+            src
+          }
+        }
+      }
       logo {
         childImageSharp {
           sizes(maxWidth: 250) {
