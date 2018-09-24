@@ -15,19 +15,20 @@ const landingPageStyle = (theme:Theme) => createStyles({
     margin: '0 auto',
     padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
   },
-  title: {
-    color: '#fff',
+  heading: {
+    color: theme.palette.common.white,
     textTransform: 'uppercase',
     fontWeight: 700,
     letterSpacing: 1.2,
+    marginBottom: '0.4em',
   },
-  subtitle: {
+  subheading: {
     fontWeight: 300,
-    color: '#fff',
+    color: theme.palette.common.white,
   },
   cards: {
     margin: '0 auto',
-    maxWidth: 900,
+    maxWidth: 1200,
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
@@ -40,7 +41,7 @@ const landingPageStyle = (theme:Theme) => createStyles({
     width: '100%',
   },
   content: {
-    padding: 0,
+    padding: '1.5em',
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -49,8 +50,8 @@ const landingPageStyle = (theme:Theme) => createStyles({
     textAlign: 'center',
   },
   cardLogo: {
-    marginTop: '1.5em',
-    maxWidth: 120,
+    maxWidth: 200,
+    width: '100%',
   },
   text: {
     width: '80%',

@@ -44,23 +44,23 @@ const LandingPage: React.SFC<Props> = ({ heading, subheading, divisions, backgro
   <div
     className={classes.page}
     style={{
-      backgroundImage: `linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,1)),url(${background.childImageSharp.sizes.src})`,
+      backgroundImage: `url(${background.childImageSharp.sizes.src})`,
     }}
   >
     {/* Hero unit */}
     <div className={classes.heroContent}>
       <Typography
-        className={classes.title}
-        variant="display1"
+        className={classes.heading}
+        variant="display2"
         align="center"
+        color="inherit"
       >
         {heading}
       </Typography>
       <Typography
-        className={classes.subtitle}
+        className={classes.subheading}
         variant="headline"
         align="center"
-        gutterBottom
         color="secondary"
       >
         {subheading}
@@ -76,11 +76,6 @@ const LandingPage: React.SFC<Props> = ({ heading, subheading, divisions, backgro
                 <CardActionArea className={classes.cardAction}>
                   <CardContent className={classes.content}>
                     <img className={classes.cardLogo} src={d.logo.childImageSharp.sizes.src}/>
-                    <div className={classes.text}>
-                      <Typography variant="subheading" className={classes.label}>
-                        {d.link.label}
-                      </Typography>
-                    </div>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -112,7 +107,7 @@ export const LandingFragment = graphql`
       }
       logo {
         childImageSharp {
-          sizes(maxWidth: 200) {
+          sizes(maxWidth: 250) {
             src
           }
         }
