@@ -32,7 +32,7 @@ const Categories: React.SFC<Props> = ({ classes, heading, items }) => (
   <section className={classes.categories}>
     <Typography
       className={classes.heading}
-      variant="display2"
+      variant="display1"
       align="center"
       color="primary"
     >

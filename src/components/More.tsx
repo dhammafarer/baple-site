@@ -22,7 +22,7 @@ const More: React.SFC<Props> = ({ heading, mainImg, logo, link, classes }) => (
   <HalfPane reverse src={mainImg.childImageSharp.sizes.src}>
     <div className={classes.section}>
       <img className={classes.logo} src={logo.childImageSharp.sizes.src}/>
-      <Typography variant="display2"
+      <Typography variant="display1"
         className={classes.heading}
       >
         {heading}

@@ -32,7 +32,7 @@ const categoriesStyles = (theme:Theme) => createStyles({
     width: '100%',
     textAlign: 'center',
     fontSize: '1.4em',
-    fontWeight: 700,
+    fontWeight: 300,
     color: theme.palette.grey[700],
     marginTop: '1em'
   }
