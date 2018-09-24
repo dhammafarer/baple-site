@@ -15,6 +15,9 @@ const headerBarStyles = (theme:Theme) => createStyles({
     height: 48,
     alignSelf: 'center',
   },
+  link: {
+    color: theme.palette.primary.main,
+  },
   title: {
     textTransform: 'uppercase'
   },

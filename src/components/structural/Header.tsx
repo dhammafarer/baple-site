@@ -4,9 +4,7 @@ import HeaderBar from '../HeaderBar';
 interface Props {
   logo: string
   title: string
-  nav: {
-    links: Array<any>
-  }
+  nav: any
 }
 
 interface State {

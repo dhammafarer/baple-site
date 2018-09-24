@@ -11,6 +11,12 @@ import { withStyles } from "@material-ui/core/styles";
 import styles from '../styles/headerBar-styles';
 import Link from 'gatsby-link';
 
+interface Lnk {
+  to: string
+  label: string
+  links: Array<Lnk>
+}
+
 interface Props {
   classes: any
   handleClose: any
@@ -19,8 +25,9 @@ interface Props {
   title: string
   logo: string
   nav: {
-    links: Array<any>
-  },
+    home: string
+    links: Array<Lnk>
+  }
 }
 
 const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, nav, title, logo }) => (
@@ -34,6 +41,15 @@ const HeaderBar: React.SFC<Props> = ({ classes, open, handleClose, toggleMenu, n
             </Typography>
           </Hidden>
           <div className={classes.grow}/>
+          <div>
+            {nav.links.map(x =>
+              <Link key={x.to} to={x.to}>
+                <Button className={classes.link}>
+                  {x.label}
+                </Button>
+              </Link>
+            )}
+          </div>
           <IconButton color="primary" onClick={toggleMenu}>
             <MenuIcon/>
           </IconButton>

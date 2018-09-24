@@ -10,13 +10,7 @@ import styles from '../../styles/layout-styles';
 interface Props {
   lang: Lang
   title: string
-  logo: {
-    childImageSharp: {
-      sizes: {
-        src: string
-      }
-    }
-  }
+  logo: Image
   nav: any
   classes: any
 }
@@ -46,6 +40,17 @@ export const AppFragment = graphql`
         }
       }
     }
-    ...NavYaml
+    nav {
+      home
+      links {
+        to
+        label
+        links
+          {
+            to
+            label
+          }
+      }
+    }
   }
 `;

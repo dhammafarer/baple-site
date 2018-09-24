@@ -14,6 +14,12 @@ import styles from '../styles/nav-styles';
 import Link from 'gatsby-link';
 import CloseIcon from "@material-ui/icons/Close";
 
+interface Lnk {
+  to: string
+  label: string
+  links: Array<Lnk>
+}
+
 interface Props {
   classes: any
   handleClose: any
@@ -22,7 +28,7 @@ interface Props {
   title: string
   nav: {
     home: string
-    links: Array<any>
+    links: Array<Lnk>
   }
 }
 
@@ -81,15 +87,3 @@ const Nav: React.SFC<Props> = ({ open, handleClose, nav, classes, logo, title}) 
 );
 
 export default withStyles(styles)(Nav);
-
-export const NavFragment = graphql`
-  fragment NavYaml on PagesYaml {
-    nav {
-      home
-      links {
-        to
-        label
-      }
-    }
-  }
-`;
